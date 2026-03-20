@@ -395,22 +395,27 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
+  /* Garante que o pseudo-elemento não cause scroll horizontal */
+  overflow: hidden;
 }
 .sobre__image-wrap {
   position: relative;
-  /* Espaço interno para o pseudo-elemento decorativo não transbordar */
-  padding: 1.5rem 0 0 1.5rem;
+  /* margem extra para a moldura decorativa aparecer atrás */
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
+/* Moldura decorativa deslocada para trás e para a esquerda/topo */
 .sobre__image-wrap::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  /* cobre a área de padding, criando a moldura deslocada */
-  width: calc(100% - 1.5rem);
-  height: calc(100% - 1.5rem);
+  top: -1.5rem;
+  left: -1.5rem;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--pearl);
-  z-index: 0;
   border-radius: 2px;
+  z-index: 0;
+  pointer-events: none;
 }
 .sobre__image {
   position: relative;
@@ -418,9 +423,12 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
-  object-position: top center;
+  object-position: center top;
   border-radius: 2px;
   display: block;
+  /* Garante que a imagem nunca ultrapasse o wrapper */
+  max-width: 100%;
+  overflow: hidden;
 }
 .sobre__list {
   list-style: none;
@@ -1149,8 +1157,8 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
       <div class="sobre__grid">
         <div class="sobre__image-wrap fade-in">
           <img
-            src="images/sala-atendimento-1.jpg"
-            alt="Interior da Clínica Saúde Odonto"
+            src="images/equipe.jpg"
+            alt="Dr. Lucas Nogueira e Dra. Gleidiane Nogueira — Saúde Odonto"
             class="sobre__image"
             loading="lazy"
           />
