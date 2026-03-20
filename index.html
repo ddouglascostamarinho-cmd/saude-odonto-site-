@@ -396,15 +396,12 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   gap: 5rem;
   align-items: center;
 }
-/* Wrapper — margem apenas para o outline não ser cortado pela viewport */
+/* Wrapper — solução definitiva com outline nativo CSS */
 .sobre__image-wrap {
   display: block;
   line-height: 0;
-  padding: 14px 0 0 14px; /* abre espaço para o outline aparecer atrás */
-  background:
-    linear-gradient(var(--pearl), var(--pearl)) top left / calc(100% - 14px) calc(100% - 14px) no-repeat;
-  /* background simula a moldura deslocada — 100% dentro do padding, sem overflow */
-  background-color: transparent;
+  /* Espaço para o ring decorativo aparecer sem overflow */
+  padding: 16px 0 0 16px;
 }
 .sobre__image {
   width: 100%;
@@ -413,6 +410,10 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   object-position: center center;
   border-radius: 2px;
   display: block;
+  /* Moldura decorativa: ring deslocado para cima e esquerda */
+  outline: 1px solid var(--pearl);
+  outline-offset: -1px;
+  box-shadow: -16px -16px 0 0 var(--white), -17px -17px 0 0 var(--pearl);
 }
 .sobre__list {
   list-style: none;
