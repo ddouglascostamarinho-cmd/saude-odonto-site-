@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+  <defs>
+    <linearGradient id="gal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b9bdbe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ddd5d6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#gal2)"/>
+  <circle cx="650" cy="100" r="200" fill="rgba(255,255,255,0.25)"/>
+  <!-- Reception desk -->
+  <g transform="translate(250, 280)" fill="rgba(52,52,52,0.18)">
+    <rect x="-150" y="80" width="400" height="20" rx="5"/>
+    <rect x="-140" y="0" width="380" height="82" rx="8"/>
+    <rect x="-50" y="-40" width="180" height="42" rx="4"/>
+    <!-- Monitor -->
+    <rect x="60" y="-100" width="90" height="62" rx="4"/>
+    <rect x="95" y="-38" width="20" height="20" rx="2"/>
+  </g>
+  <text x="400" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="rgba(52,52,52,0.4)" letter-spacing="6">RECEPÇÃO</text>
+  <text x="400" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(52,52,52,0.3)" letter-spacing="3">Substituir pela foto real</text>
+</svg>

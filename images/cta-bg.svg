@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
+  <defs>
+    <linearGradient id="ctaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d3d3d;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="gridPat" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="600" fill="url(#ctaBg)"/>
+  <rect width="1920" height="600" fill="url(#gridPat)"/>
+  <circle cx="1600" cy="100" r="300" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="200" cy="500" r="220" fill="rgba(255,255,255,0.025)"/>
+  <!-- Large tooth ornament -->
+  <g transform="translate(960, 200) scale(2)" opacity="0.05">
+    <path d="M80 0C60 0 45 12 40 30C35 12 20 0 0 0C-20 0-40 16-40 55C-40 94-28 130-14 155L0 210C3 225 10 232 18 232C26 232 33 225 36 210L40 175L44 210C47 225 54 232 62 232C70 232 77 225 80 210L94 155C108 130 120 94 120 55C120 16 100 0 80 0Z" fill="rgba(255,255,255,1)" transform="translate(-40,-116)"/>
+  </g>
+</svg>

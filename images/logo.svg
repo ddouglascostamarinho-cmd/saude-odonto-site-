@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" fill="none">
+  <!-- Tooth icon -->
+  <g transform="translate(0, 8)">
+    <path d="M28 4C22 4 17 7 14 12C11 7 6 4 0 4C-6 4-12 8-12 18C-12 28-8 38-4 44L0 62C1 66 3 68 5 68C7 68 9 66 10 62L14 48L18 62C19 66 21 68 23 68C25 68 27 66 28 62L32 44C36 38 40 28 40 18C40 8 34 4 28 4Z" fill="#343434" transform="translate(10, 0)" />
+    <!-- Checkmark overlay -->
+    <path d="M8 30L14 38L26 20" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  <!-- Text: Saúde Odonto -->
+  <text x="68" y="34" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#343434">Saúde Odonto</text>
+  <!-- Subtitle -->
+  <text x="68" y="52" font-family="Arial, sans-serif" font-size="9.5" font-weight="400" fill="#b9bdbe" letter-spacing="3">CLÍNICA ODONTOLÓGICA</text>
+  <!-- Divider line -->
+  <line x1="64" y1="18" x2="64" y2="62" stroke="#ddd5d6" stroke-width="1"/>
+</svg>

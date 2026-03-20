@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#343434;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#666;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#gal1)"/>
+  <circle cx="900" cy="200" r="350" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="200" cy="650" r="250" fill="rgba(255,255,255,0.03)"/>
+  <!-- Dental chair icon -->
+  <g transform="translate(500, 280)" fill="rgba(255,255,255,0.2)">
+    <rect x="-80" y="0" width="200" height="20" rx="8"/>
+    <rect x="-80" y="20" width="160" height="100" rx="8"/>
+    <rect x="-100" y="120" width="240" height="15" rx="5"/>
+    <rect x="-20" y="135" width="80" height="80" rx="6"/>
+    <circle cx="0" cy="-40" r="30"/>
+    <rect x="-8" y="-80" width="16" height="40" rx="4"/>
+    <rect x="-40" y="-90" width="80" height="14" rx="4"/>
+  </g>
+  <text x="600" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="rgba(255,255,255,0.45)" letter-spacing="8">SALA DE ATENDIMENTO</text>
+  <text x="600" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.25)" letter-spacing="3">Substituir pela foto real</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddd5d6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b9bdbe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#343434;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#343434;stop-opacity:0.04" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="900" fill="url(#bg)"/>
+  <!-- Subtle pattern -->
+  <rect width="800" height="900" fill="url(#accent)"/>
+  <!-- Decorative circles -->
+  <circle cx="600" cy="150" r="220" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="200" cy="750" r="180" fill="rgba(52,52,52,0.06)"/>
+  <!-- Icon: medical cross + tooth shape -->
+  <g transform="translate(320, 340)">
+    <!-- Tooth silhouette -->
+    <path d="M80 0C60 0 45 12 40 30C35 12 20 0 0 0C-20 0-40 16-40 55C-40 94-28 130-14 155L0 210C3 225 10 232 18 232C26 232 33 225 36 210L40 175L44 210C47 225 54 232 62 232C70 232 77 225 80 210L94 155C108 130 120 94 120 55C120 16 100 0 80 0Z" fill="rgba(52,52,52,0.18)"/>
+    <!-- Checkmark -->
+    <path d="M10 100L28 125L70 70" stroke="rgba(52,52,52,0.25)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Label -->
+  <text x="400" y="640" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="rgba(52,52,52,0.35)" letter-spacing="6">INTERIOR DA CLÍNICA</text>
+  <text x="400" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(52,52,52,0.25)" letter-spacing="3">Substituir pela foto real</text>
+</svg>
