@@ -396,42 +396,23 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   gap: 5rem;
   align-items: center;
 }
-/* Wrapper com borda decorativa usando box-shadow — sem pseudo-elemento, sem overflow */
+/* Wrapper — margem apenas para o outline não ser cortado pela viewport */
 .sobre__image-wrap {
-  position: relative;
   display: block;
-  line-height: 0; /* elimina gap de inline */
-}
-/* Moldura decorativa via outline offset — 100% contida, sem overflow */
-.sobre__image-wrap::after {
-  content: '';
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  right: 12px;
-  bottom: 12px;
-  border: 1px solid var(--pearl);
-  border-radius: 2px;
-  z-index: 0;
-  pointer-events: none;
+  line-height: 0;
+  padding: 14px 0 0 14px; /* abre espaço para o outline aparecer atrás */
+  background:
+    linear-gradient(var(--pearl), var(--pearl)) top left / calc(100% - 14px) calc(100% - 14px) no-repeat;
+  /* background simula a moldura deslocada — 100% dentro do padding, sem overflow */
+  background-color: transparent;
 }
 .sobre__image {
-  position: relative;
-  z-index: 1;
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
   object-position: center top;
   border-radius: 2px;
   display: block;
-}
-/* Remove qualquer seta/controle de carrossel sobre a imagem */
-.sobre__image-wrap button,
-.sobre__image-wrap [class*="arrow"],
-.sobre__image-wrap [class*="carousel"],
-.sobre__image-wrap [class*="swiper"],
-.sobre__image-wrap [class*="slider"] {
-  display: none !important;
 }
 .sobre__list {
   list-style: none;
