@@ -398,14 +398,19 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
 }
 .sobre__image-wrap {
   position: relative;
+  /* Espaço interno para o pseudo-elemento decorativo não transbordar */
+  padding: 1.5rem 0 0 1.5rem;
 }
 .sobre__image-wrap::before {
   content: '';
   position: absolute;
-  top: -1.5rem; left: -1.5rem;
-  width: 100%; height: 100%;
+  top: 0; left: 0;
+  /* cobre a área de padding, criando a moldura deslocada */
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
   border: 1px solid var(--pearl);
   z-index: 0;
+  border-radius: 2px;
 }
 .sobre__image {
   position: relative;
@@ -413,7 +418,9 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
+  border-radius: 2px;
+  display: block;
 }
 .sobre__list {
   list-style: none;
