@@ -3,5 +3,5 @@ Allow: /
 
 Sitemap: https://saudeodontopvh.com.br/sitemap.xml
 
-# Bloquear arquivos desnecessários
+# Não indexar SVGs de placeholder
 Disallow: /images/*.svg

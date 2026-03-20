@@ -4,49 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ── SEO PRIMARY ──────────────────────────────────────── -->
-  <title>Saúde Odonto — Dentista em Porto Velho, RO | Ortodontia, Implantes e Estética</title>
-  <meta name="description" content="Clínica odontológica em Porto Velho, RO. Dr. Lucas Nogueira e Dra. Gleidiane Nogueira oferecem Ortodontia, Implantes, Clareamento, Odontopediatria e Harmonização Facial. Agende sua consulta pelo WhatsApp." />
-  <meta name="keywords" content="dentista porto velho, clínica odontológica porto velho, ortodontia porto velho, implante dental porto velho, clareamento dental, harmonização facial, odontopediatria porto velho, facetas de porcelana, saúde odonto, dentista RO, bairro JK porto velho" />
+  <!-- ═══════════════════════════════════════════════════════════
+       SEO — SAÚDE ODONTO | Porto Velho, RO
+       Schema.org Dentist, Open Graph, Twitter Card, Local SEO
+  ══════════════════════════════════════════════════════════════ -->
+  <title>Dentista em Porto Velho RO | Saúde Odonto — Ortodontia, Implantes e Estética Dental</title>
+  <meta name="description" content="Saúde Odonto — Clínica odontológica em Porto Velho, RO. Dr. Lucas Nogueira (CRO-RO 4076) e Dra. Gleidiane Nogueira (CRO-RO 3785). Ortodontia, Implantes, Clareamento, Harmonização Facial e 18+ especialidades. Agende: (69) 9 9340-2645." />
+  <meta name="keywords" content="dentista porto velho, dentista porto velho RO, clínica odontológica porto velho, ortodontia porto velho, implante dental porto velho, clareamento dental, harmonização facial, odontopediatria, faceta porcelana, botox porto velho" />
   <meta name="author" content="Saúde Odonto" />
   <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
+  <meta name="language" content="pt-BR" />
+  <meta name="geo.region" content="BR-RO" />
+  <meta name="geo.placename" content="Porto Velho" />
   <link rel="canonical" href="https://saudeodontopvh.com.br/" />
 
-  <!-- ── OPEN GRAPH (Facebook / WhatsApp / Instagram) ─────── -->
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Saúde Odonto" />
-  <meta property="og:title" content="Saúde Odonto — Dentista em Porto Velho, RO" />
-  <meta property="og:description" content="Odontologia completa com atendimento humanizado. Ortodontia, Implantes, Clareamento, Estética e muito mais. Agende agora pelo WhatsApp." />
   <meta property="og:url" content="https://saudeodontopvh.com.br/" />
+  <meta property="og:title" content="Saúde Odonto — Dentista em Porto Velho, RO" />
+  <meta property="og:description" content="Clínica odontológica completa em Porto Velho, RO. Ortodontia, Implantes, Estética Dental, Harmonização Facial e muito mais. Agende já!" />
   <meta property="og:image" content="https://saudeodontopvh.com.br/images/sala-espera.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Clínica Saúde Odonto — Porto Velho, RO" />
+  <meta property="og:image:alt" content="Saúde Odonto — Clínica Odontológica em Porto Velho" />
 
-  <!-- ── TWITTER CARD ──────────────────────────────────────── -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Saúde Odonto — Dentista em Porto Velho, RO" />
-  <meta name="twitter:description" content="Odontologia completa com atendimento humanizado em Porto Velho, RO." />
+  <meta name="twitter:description" content="Clínica odontológica completa em Porto Velho, RO. Ortodontia, Implantes, Estética Dental e muito mais." />
   <meta name="twitter:image" content="https://saudeodontopvh.com.br/images/sala-espera.jpg" />
 
-  <!-- ── GEO / LOCAL SEO ───────────────────────────────────── -->
-  <meta name="geo.region" content="BR-RO" />
-  <meta name="geo.placename" content="Porto Velho" />
-  <meta name="geo.position" content="-8.7608;-63.8994" />
-  <meta name="ICBM" content="-8.7608, -63.8994" />
-
-  <!-- ── FAVICON ───────────────────────────────────────────── -->
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <!-- PWA / Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#343434" />
 
-  <!-- ── PERFORMANCE: preload hero image ───────────────────── -->
-  <link rel="preload" as="image" href="images/sala-espera.jpg" />
+  <!-- Performance: preload hero image -->
+  <link rel="preload" as="image" href="images/sala-espera.jpg" fetchpriority="high" />
 
   <!-- Google Fonts: carrega async para não bloquear render -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -56,6 +53,82 @@
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
+
+  <!-- Schema.org JSON-LD: Dentist + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Saúde Odonto",
+    "alternateName": "Clínica Saúde Odonto",
+    "description": "Clínica odontológica em Porto Velho, RO. Especialidades: Ortodontia, Implantes, Estética Dental, Clareamento, Harmonização Facial, Odontopediatria e muito mais.",
+    "url": "https://saudeodontopvh.com.br",
+    "telephone": "+55-69-99340-2645",
+    "email": "clinicasaudeodontopvh@gmail.com",
+    "image": "https://saudeodontopvh.com.br/images/sala-espera.jpg",
+    "logo": "https://saudeodontopvh.com.br/images/logo.png",
+    "priceRange": "$$",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Plácido de Castro, 7591",
+      "addressLocality": "Porto Velho",
+      "addressRegion": "RO",
+      "postalCode": "76801-000",
+      "addressCountry": "BR",
+      "addressArea": "Bairro JK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-8.7619",
+      "longitude": "-63.9039"
+    },
+    "sameAs": [
+      "https://www.instagram.com/saudeodonto2023/"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Dr. Lucas Nogueira",
+        "jobTitle": "Cirurgião-Dentista",
+        "description": "CRO-RO 4076 — Especialista em Implantodontia e Cirurgia"
+      },
+      {
+        "@type": "Person",
+        "name": "Dra. Gleidiane Nogueira",
+        "jobTitle": "Cirurgiã-Dentista",
+        "description": "CRO-RO 3785 — Especialista em Ortodontia e Estética Dental"
+      }
+    ],
+    "hasMap": "https://maps.google.com/maps?q=Rua+Pl%C3%A1cido+de+Castro%2C+7591%2C+JK%2C+Porto+Velho%2C+RO",
+    "areaServed": {
+      "@type": "City",
+      "name": "Porto Velho"
+    },
+    "medicalSpecialty": [
+      "Orthodontics",
+      "Prosthodontics",
+      "Oral Surgery",
+      "Pediatric Dentistry",
+      "Cosmetic Dentistry"
+    ]
+  }
+  </script>
 
   <style>
 /* ==========================================================
@@ -115,19 +188,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 28px; border-radius: var(--radius-xl);
-  font-family: var(--font-sans); font-size: .875rem; font-weight: 500;
-  letter-spacing: .04em; transition: var(--transition); white-space: nowrap;
+  font-size: .9375rem; font-weight: 500; letter-spacing: .02em;
+  transition: var(--transition); cursor: pointer; border: 2px solid transparent;
 }
+.btn--lg { padding: 16px 36px; font-size: 1rem; }
 .btn--primary { background: var(--color-dark); color: var(--color-white); border: 2px solid var(--color-dark); }
 .btn--primary:hover { background: transparent; color: var(--color-dark); }
 .btn--outline { background: transparent; color: var(--color-dark); border: 2px solid var(--color-dark); }
 .btn--outline:hover { background: var(--color-dark); color: var(--color-white); }
 .btn--ghost { background: transparent; color: rgba(255,255,255,.85); border: 2px solid rgba(255,255,255,.4); }
 .btn--ghost:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.7); color: var(--color-white); }
-.btn--lg { padding: 18px 40px; font-size: 1rem; }
 
 /* ── HEADER / NAV ────────────────────────────────────────── */
-.header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-height); transition: var(--transition); }
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: transparent; transition: var(--transition); }
 .header.scrolled { background: rgba(255,255,255,.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--shadow-sm); }
 .nav { display: flex; align-items: center; height: var(--nav-height); gap: 48px; }
 .nav__logo-img { height: 56px; width: auto; object-fit: contain; filter: brightness(0) invert(1); transition: var(--transition); }
@@ -178,14 +251,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .sobre__img-deco { position: absolute; top: -20px; left: -20px; right: 20px; bottom: 20px; border: 1.5px solid var(--color-light); border-radius: var(--radius-lg); z-index: -1; pointer-events: none; }
 .sobre__desc { color: #666; margin-bottom: 16px; font-size: .9375rem; line-height: 1.75; }
 .sobre__features { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
-.sobre__feature { display: flex; align-items: center; gap: 12px; font-size: .875rem; color: var(--color-dark); }
-.sobre__feature i { color: var(--color-mid); font-size: .875rem; flex-shrink: 0; }
+.sobre__feature { display: flex; align-items: center; gap: 12px; font-size: .875rem; color: #666; }
+.sobre__feature i { color: var(--color-mid); font-size: .75rem; flex-shrink: 0; }
 
 /* ── EQUIPE ──────────────────────────────────────────────── */
-.equipe__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; max-width: 860px; margin: 0 auto; }
+.equipe__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; max-width: 900px; margin: 0 auto; }
 .equipe__card { background: var(--color-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); transition: var(--transition); border: 1.5px solid var(--color-light); }
 .equipe__card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-.equipe__photo-wrap { position: relative; aspect-ratio: 3/4; overflow: hidden; background: var(--color-off); }
+.equipe__photo-wrap { position: relative; aspect-ratio: 3/4; overflow: hidden; }
 .equipe__photo { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .6s ease; }
 .equipe__card:hover .equipe__photo { transform: scale(1.05); }
 .equipe__photo-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(52,52,52,.4) 0%, transparent 50%); }
@@ -218,34 +291,32 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .servicos__cta p { color: #888; font-size: .9375rem; margin-bottom: 20px; }
 
 /* ── GALERIA ─────────────────────────────────────────────── */
-.galeria__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; grid-template-rows: 280px 280px; gap: 16px; }
-.galeria__item { position: relative; border-radius: var(--radius-md); overflow: hidden; cursor: pointer; background: var(--color-light); }
-.galeria__item--large { grid-row: 1 / 3; }
+.galeria__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.galeria__item { position: relative; border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; }
 .galeria__item img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform .6s ease; }
 .galeria__item:hover img { transform: scale(1.06); }
 .galeria__caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 16px; background: linear-gradient(to top, rgba(52,52,52,.7), transparent); color: var(--color-white); font-size: .8125rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; transform: translateY(100%); transition: var(--transition); }
 .galeria__item:hover .galeria__caption { transform: translateY(0); }
 
 /* ── DIFERENCIAIS ────────────────────────────────────────── */
-.diferenciais { background: var(--color-dark); }
-.diferenciais__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
-.diferencial__item { text-align: center; padding: 20px; }
-.diferencial__icon { width: 64px; height: 64px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: var(--transition); }
-.diferencial__item:hover .diferencial__icon { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.35); }
-.diferencial__icon i { font-size: 1.25rem; color: rgba(255,255,255,.5); }
-.diferencial__item h4 { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 400; color: var(--color-white); line-height: 1.3; margin-bottom: 10px; }
-.diferencial__item p { font-size: .8125rem; color: rgba(255,255,255,.4); line-height: 1.65; }
+.diferenciais__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.diferencial__item { text-align: center; padding: 40px 24px; background: var(--color-white); border: 1.5px solid var(--color-light); border-radius: var(--radius-md); transition: var(--transition); }
+.diferencial__item:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); border-color: var(--color-mid); }
+.diferencial__icon { width: 64px; height: 64px; background: var(--color-off); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: var(--transition); }
+.diferencial__item:hover .diferencial__icon { background: var(--color-dark); }
+.diferencial__icon i { font-size: 1.375rem; color: var(--color-mid); transition: var(--transition); }
+.diferencial__item:hover .diferencial__icon i { color: var(--color-white); }
+.diferencial__item h4 { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; color: var(--color-dark); line-height: 1.3; margin-bottom: 12px; }
+.diferencial__item p { font-size: .875rem; color: #888; line-height: 1.6; }
 
 /* ── CTA BANNER ──────────────────────────────────────────── */
-.cta-banner { position: relative; padding: 120px 0; overflow: hidden; background: var(--color-dark); }
+.cta-banner { position: relative; padding: 100px 0; overflow: hidden; }
 .cta-banner::before { content: ''; position: absolute; inset: 0; background-image: url('images/recepcao.jpg'); background-size: cover; background-position: center; }
-.cta-banner__overlay { position: absolute; inset: 0; background: rgba(52,52,52,.88); }
-.cta-banner__content { position: relative; z-index: 2; text-align: center; }
+.cta-banner__overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(52,52,52,.92), rgba(52,52,52,.78)); }
+.cta-banner__content { position: relative; z-index: 2; text-align: center; max-width: 680px; margin: 0 auto; }
 .cta-banner__title { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; color: var(--color-white); line-height: 1.2; margin-bottom: 20px; }
-.cta-banner__title em { font-style: italic; color: rgba(255,255,255,.65); }
-.cta-banner__subtitle { font-size: 1.0625rem; color: rgba(255,255,255,.6); margin-bottom: 40px; max-width: 480px; margin-left: auto; margin-right: auto; }
-.cta-banner .btn--primary { background: var(--color-white); color: var(--color-dark); border-color: var(--color-white); }
-.cta-banner .btn--primary:hover { background: transparent; color: var(--color-white); }
+.cta-banner__title em { font-style: italic; color: rgba(255,255,255,.75); }
+.cta-banner__subtitle { font-size: 1.0625rem; color: rgba(255,255,255,.65); line-height: 1.7; margin-bottom: 40px; }
 
 /* ── CONTATO ─────────────────────────────────────────────── */
 .contato__grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
@@ -256,24 +327,63 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .contato__item span, .contato__item a { font-size: .9375rem; color: var(--color-dark); line-height: 1.5; }
 .contato__item a:hover { color: var(--color-mid); }
 .contato__social { display: flex; gap: 12px; margin-top: 8px; }
-.social__btn { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1.5px solid var(--color-light); color: var(--color-mid); font-size: .9375rem; transition: var(--transition); }
+.social__btn { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--color-light); display: flex; align-items: center; justify-content: center; transition: var(--transition); }
 .social__btn:hover { background: var(--color-dark); border-color: var(--color-dark); color: var(--color-white); }
 .contato__mapa { border-radius: var(--radius-lg); overflow: hidden; height: 420px; box-shadow: var(--shadow-md); }
 .contato__mapa iframe { width: 100%; height: 100%; border: none; display: block; }
 
-
-/* ── FORMULÁRIO DE CONTATO ───────────────────── */
-.contato__form-title { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; color: var(--color-dark); margin-bottom: 8px; }
-.contato__form-sub { font-size: .875rem; color: #888; margin-bottom: 28px; line-height: 1.6; }
+/* ── FORMULÁRIO DE AGENDAMENTO ───────────────────────────── */
+.agendamento { background: var(--color-off); }
+.agendamento__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.agendamento__info-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400; line-height: 1.25;
+  color: var(--color-dark); margin-bottom: 16px;
+}
+.agendamento__info-title em { font-style: italic; font-weight: 300; }
+.agendamento__info-desc { font-size: .9375rem; color: #666; line-height: 1.75; margin-bottom: 28px; }
+.agendamento__steps { display: flex; flex-direction: column; gap: 16px; }
+.agendamento__step { display: flex; align-items: flex-start; gap: 14px; }
+.agendamento__step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--color-dark); color: var(--color-white); display: flex; align-items: center; justify-content: center; font-size: .75rem; font-weight: 700; flex-shrink: 0; }
+.agendamento__step-text strong { display: block; font-size: .9375rem; font-weight: 600; color: var(--color-dark); margin-bottom: 2px; }
+.agendamento__step-text span { font-size: .875rem; color: #888; }
 .form__group { margin-bottom: 18px; }
 .form__label { display: block; font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--color-mid); margin-bottom: 6px; }
-.form__input, .form__select, .form__textarea { width: 100%; padding: 12px 16px; border: 1.5px solid var(--color-light); border-radius: var(--radius-sm); font-family: var(--font-sans); font-size: .9375rem; color: var(--color-dark); background: var(--color-white); transition: border-color .25s ease, box-shadow .25s ease; outline: none; -webkit-appearance: none; appearance: none; }
-.form__input:focus, .form__select:focus, .form__textarea:focus { border-color: var(--color-dark); box-shadow: 0 0 0 3px rgba(52,52,52,.08); }
+.form__input, .form__select, .form__textarea {
+  width: 100%; padding: 12px 16px;
+  border: 1.5px solid var(--color-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: .9375rem; color: var(--color-dark);
+  background: var(--color-white);
+  transition: border-color .25s ease, box-shadow .25s ease;
+  outline: none; -webkit-appearance: none; appearance: none;
+}
+.form__input:focus, .form__select:focus, .form__textarea:focus {
+  border-color: var(--color-dark);
+  box-shadow: 0 0 0 3px rgba(52,52,52,.08);
+}
 .form__input::placeholder, .form__textarea::placeholder { color: #bbb; }
-.form__select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b9bdbe' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 42px; cursor: pointer; }
+.form__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b9bdbe' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 16px center; padding-right: 42px; cursor: pointer;
+}
 .form__textarea { min-height: 100px; resize: vertical; line-height: 1.6; }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form__btn { width: 100%; padding: 14px 24px; background: #25D366; color: #fff; border: none; border-radius: var(--radius-sm); font-family: var(--font-sans); font-size: 1rem; font-weight: 600; letter-spacing: .02em; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: var(--transition); margin-top: 8px; }
+.form__card { background: var(--color-white); border-radius: var(--radius-md); padding: 36px; box-shadow: var(--shadow-md); border: 1.5px solid var(--color-light); }
+.form__card-title { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; color: var(--color-dark); margin-bottom: 6px; }
+.form__card-sub { font-size: .875rem; color: #888; margin-bottom: 28px; line-height: 1.6; }
+.form__btn {
+  width: 100%; padding: 14px 24px;
+  background: #25D366; color: #fff;
+  border: none; border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 1rem; font-weight: 600; letter-spacing: .02em;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  transition: var(--transition); margin-top: 8px;
+}
 .form__btn:hover { background: #1ebe5a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,.3); }
 .form__btn i { font-size: 1.25rem; }
 .form__note { font-size: .75rem; color: #aaa; text-align: center; margin-top: 12px; line-height: 1.5; }
@@ -291,11 +401,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer__contact i { color: rgba(255,255,255,.3); flex-shrink: 0; margin-top: 3px; font-size: .875rem; }
 .footer__bottom { padding: 24px 0; display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; }
 .footer__bottom p { font-size: .75rem; color: rgba(255,255,255,.2); letter-spacing: .03em; }
+.footer__lgpd { font-size: .7rem !important; color: rgba(255,255,255,.15) !important; }
+.footer__lgpd a { color: rgba(255,255,255,.3); text-decoration: underline; }
+.footer__lgpd a:hover { color: rgba(255,255,255,.6); }
 
 /* ── WHATSAPP FLUTUANTE ──────────────────────────────────── */
-.whatsapp-float { position: fixed; bottom: 32px; right: 32px; width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem; z-index: 999; box-shadow: 0 4px 20px rgba(37,211,102,.4); transition: var(--transition); }
+.whatsapp-float { position: fixed; bottom: 28px; right: 28px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,.35); z-index: 900; transition: var(--transition); border: 1.5px solid rgba(255,255,255,.2); }
+.whatsapp-float i { font-size: 1.75rem; color: #fff; }
 .whatsapp-float:hover { transform: scale(1.12); box-shadow: 0 8px 30px rgba(37,211,102,.5); }
-.whatsapp-float__pulse { position: absolute; inset: -4px; border-radius: 50%; border: 2px solid #25D366; opacity: 0; animation: waPulse 2.5s ease-out infinite; }
+.whatsapp-float__pulse { position: absolute; inset: -6px; border-radius: 50%; border: 2px solid #25D366; opacity: 0; animation: waPulse 2.2s ease-out infinite; }
 @keyframes waPulse { 0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.55); } }
 
 /* ── ANIMAÇÕES DE ENTRADA ────────────────────────────────── */
@@ -306,197 +420,107 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 [data-aos].aos-active   { opacity: 1; transform: translate(0); }
 
 /* ── MOBILE MENU ─────────────────────────────────────────── */
-.nav__list.open { display: flex; flex-direction: column; position: fixed; top: var(--nav-height); left: 0; right: 0; background: rgba(255,255,255,.98); backdrop-filter: blur(12px); padding: 32px 24px; gap: 24px; box-shadow: var(--shadow-lg); z-index: 999; animation: slideDown .3s ease; }
-.nav__list.open .nav__link { color: var(--color-dark); font-size: 1.1rem; }
-@keyframes slideDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 768px) {
+  .nav__list { position: fixed; top: var(--nav-height); left: 0; right: 0; background: rgba(255,255,255,.98); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); flex-direction: column; gap: 0; margin: 0; padding: 16px 0 24px; max-height: 0; overflow: hidden; transition: max-height .4s ease; box-shadow: var(--shadow-md); }
+  .nav__list.open { max-height: 500px; }
+  .nav__list .nav__link { color: var(--color-dark) !important; padding: 14px 24px; display: block; width: 100%; }
+  .nav__cta { margin: 8px 24px 0; width: calc(100% - 48px); justify-content: center; color: var(--color-dark) !important; border-color: var(--color-dark) !important; }
+  .nav__toggle { display: flex; }
+}
 
 /* ── RESPONSIVO ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .sobre__grid { grid-template-columns: 1fr; gap: 48px; }
-  .sobre__visual { max-width: 480px; margin: 0 auto; }
-  .sobre__img-deco { display: none; }
-  .diferenciais__grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
-  .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
-  .footer__brand { grid-column: 1 / -1; }
+  .diferenciais__grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .agendamento__grid { grid-template-columns: 1fr; gap: 48px; }
 }
 @media (max-width: 768px) {
-  :root { --nav-height: 64px; }
-  .nav__list { display: none; }
-  .nav__toggle { display: flex; }
-  .nav__cta { display: none; }
   .section { padding: 72px 0; }
-  .hero__title { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+  .sobre__grid { grid-template-columns: 1fr; gap: 40px; }
+  .equipe__grid { grid-template-columns: 1fr; max-width: 400px; }
+  .galeria__grid { grid-template-columns: 1fr 1fr; }
+  .contato__grid { grid-template-columns: 1fr; gap: 40px; }
   .hero__stats { gap: 20px; }
   .hero__stat-number { font-size: 2rem; }
+  .footer__grid { grid-template-columns: 1fr; gap: 24px; }
   .hero__scroll { display: none; }
-  .equipe__grid { grid-template-columns: 1fr; max-width: 400px; }
-  .servicos__tabs { flex-direction: column; border-radius: var(--radius-md); width: 100%; }
-  .servicos__tab { text-align: center; border-radius: var(--radius-sm); }
-  .galeria__grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-  .galeria__item--large { grid-row: auto; grid-column: 1 / -1; aspect-ratio: 16/9; }
-  .galeria__item { aspect-ratio: 4/3; }
-  .diferenciais__grid { grid-template-columns: 1fr 1fr; gap: 24px; }
-  .contato__grid { grid-template-columns: 1fr; }
-  .contato__mapa { height: 300px; }
-  .footer__grid { grid-template-columns: 1fr; gap: 32px; }
-  .footer__bottom { flex-direction: column; }
-  .whatsapp-float { bottom: 24px; right: 20px; width: 52px; height: 52px; font-size: 1.3rem; }
+  .form__row { grid-template-columns: 1fr; gap: 0; }
 }
 @media (max-width: 480px) {
-  .hero__actions { flex-direction: column; align-items: flex-start; }
-  .hero__stats { flex-direction: column; gap: 12px; }
-  .hero__stat-divider { display: none; }
+  .galeria__grid { grid-template-columns: 1fr; }
   .diferenciais__grid { grid-template-columns: 1fr; }
+  .btn { padding: 12px 22px; font-size: .875rem; }
+  .hero__title { font-size: 2.4rem; }
 }
-  </style>
-
-  <!-- ── SCHEMA.ORG: LocalBusiness + Dentist ──────────────── -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-    "@id": "https://saudeodontopvh.com.br/#dentist",
-    "name": "Saúde Odonto — Clínica Odontológica",
-    "alternateName": "Saúde Odonto",
-    "description": "Clínica odontológica em Porto Velho, RO especializada em Ortodontia, Implantes Dentários, Clareamento Dental, Odontopediatria, Harmonização Facial, Facetas de Porcelana e muito mais.",
-    "url": "https://saudeodontopvh.com.br/",
-    "logo": "https://saudeodontopvh.com.br/images/logo.png",
-    "image": [
-      "https://saudeodontopvh.com.br/images/sala-espera.jpg",
-      "https://saudeodontopvh.com.br/images/recepcao.jpg",
-      "https://saudeodontopvh.com.br/images/equipe.jpg"
-    ],
-    "telephone": "+55-69-99340-2645",
-    "email": "clinicasaudeodontopvh@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rua Plácido de Castro, 7591",
-      "addressLocality": "Porto Velho",
-      "addressRegion": "RO",
-      "postalCode": "76801-000",
-      "addressCountry": "BR",
-      "addressLocality": "Bairro JK"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -8.7608,
-      "longitude": -63.8994
-    },
-    "hasMap": "https://maps.google.com/maps?q=Rua+Pl%C3%A1cido+de+Castro%2C+7591%2C+JK%2C+Porto+Velho%2C+RO",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "12:00"
-      }
-    ],
-    "priceRange": "$$",
-    "currenciesAccepted": "BRL",
-    "paymentAccepted": "Cash, Credit Card, Debit Card, PIX",
-    "sameAs": [
-      "https://www.instagram.com/saudeodonto2023/"
-    ],
-    "employee": [
-      {
-        "@type": "Physician",
-        "name": "Dr. Lucas Nogueira",
-        "medicalSpecialty": "Dentistry",
-        "identifier": "CRO-RO 4076"
-      },
-      {
-        "@type": "Physician",
-        "name": "Dra. Gleidiane Nogueira",
-        "medicalSpecialty": "Dentistry",
-        "identifier": "CRO-RO 3785"
-      }
-    ],
-    "medicalSpecialty": [
-      "Dentistry",
-      "Orthodontics",
-      "Oral Surgery",
-      "Pediatric Dentistry"
-    ],
-    "areaServed": {
-      "@type": "City",
-      "name": "Porto Velho",
-      "addressRegion": "RO",
-      "addressCountry": "BR"
-    }
-  }
-  </script>
-
+</style>
 </head>
 <body>
 
-<!-- ===================== HEADER / NAV ===================== -->
+<!-- ===================== HEADER ===================== -->
 <header class="header" id="header">
-  <nav class="nav container">
-    <a href="#home" class="nav__logo">
-      <img src="images/logo.png" alt="Saúde Odonto" class="nav__logo-img" />
-    </a>
-    <ul class="nav__list" id="navList">
-      <li><a href="#sobre"    class="nav__link">Sobre</a></li>
-      <li><a href="#equipe"   class="nav__link">Equipe</a></li>
-      <li><a href="#servicos" class="nav__link">Serviços</a></li>
-      <li><a href="#estrutura" class="nav__link">Estrutura</a></li>
-      <li><a href="#contato"  class="nav__link">Contato</a></li>
-    </ul>
-    <a href="https://wa.me/5569993402645?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Sa%C3%BAde%20Odonto." target="_blank" rel="noopener" class="btn btn--outline nav__cta">
-      <i class="fab fa-whatsapp"></i> Agendar
-    </a>
-    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <div class="container">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio" aria-label="Saúde Odonto — Início">
+        <img src="images/logo.png" alt="Saúde Odonto" class="nav__logo-img" />
+      </a>
+      <ul class="nav__list" id="navList" role="menubar">
+        <li role="none"><a href="#sobre"    class="nav__link" role="menuitem">Sobre</a></li>
+        <li role="none"><a href="#equipe"   class="nav__link" role="menuitem">Equipe</a></li>
+        <li role="none"><a href="#servicos" class="nav__link" role="menuitem">Serviços</a></li>
+        <li role="none"><a href="#estrutura" class="nav__link" role="menuitem">Estrutura</a></li>
+        <li role="none"><a href="#contato"  class="nav__link" role="menuitem">Contato</a></li>
+        <li role="none">
+          <a href="https://wa.me/5569993402645?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Sa%C3%BAde%20Odonto."
+             target="_blank" rel="noopener" class="btn btn--outline nav__cta" role="menuitem">
+            <i class="fab fa-whatsapp"></i> Agendar
+          </a>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
 </header>
 
 <!-- ===================== HERO ===================== -->
-<section class="hero" id="home">
-  <div class="hero__bg"></div>
+<section class="hero" id="inicio" aria-label="Banner principal">
+  <div class="hero__bg" role="img" aria-label="Interior da Saúde Odonto"></div>
   <div class="hero__overlay"></div>
-  <div class="container hero__content">
-    <div class="hero__badge">Porto Velho · Rondônia</div>
-    <h1 class="hero__title">
-      Seu sorriso<br/>
-      <em>merece o melhor</em><br/>
-      cuidado
-    </h1>
-    <p class="hero__subtitle">
-      Odontologia completa, estética facial e cuidado humanizado.<br/>
-      Transformamos sorrisos com excelência clínica e atenção personalizada.
-    </p>
-    <div class="hero__actions">
-      <a href="https://wa.me/5569993402645?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Sa%C3%BAde%20Odonto." target="_blank" rel="noopener" class="btn btn--primary">
-        <i class="fab fa-whatsapp"></i> Agendar consulta
-      </a>
-      <a href="#servicos" class="btn btn--ghost">Nossos serviços</a>
-    </div>
-    <div class="hero__stats">
-      <div class="hero__stat">
-        <span class="hero__stat-number" data-target="2">2</span>
-        <span class="hero__stat-label">Especialistas</span>
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__badge">Porto Velho, Rondônia</span>
+      <h1 class="hero__title">Seu sorriso merece<br/><em>o melhor cuidado</em></h1>
+      <p class="hero__subtitle">Odontologia completa com Dr. Lucas Nogueira e Dra. Gleidiane Nogueira — especialistas dedicados ao seu sorriso e bem-estar.</p>
+      <div class="hero__actions">
+        <a href="https://wa.me/5569993402645?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o%20na%20Sa%C3%BAde%20Odonto."
+           target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+          <i class="fab fa-whatsapp"></i> Agendar Consulta
+        </a>
+        <a href="#servicos" class="btn btn--ghost btn--lg">
+          <i class="fas fa-tooth"></i> Ver Serviços
+        </a>
       </div>
-      <div class="hero__stat-divider"></div>
-      <div class="hero__stat">
-        <span class="hero__stat-number" data-target="18">18+</span>
-        <span class="hero__stat-label">Especialidades</span>
-      </div>
-      <div class="hero__stat-divider"></div>
-      <div class="hero__stat">
-        <span class="hero__stat-number" data-target="100">100%</span>
-        <span class="hero__stat-label">Dedicação</span>
+      <div class="hero__stats" aria-label="Números da clínica">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="2">2</span>
+          <span class="hero__stat-label">Especialistas</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="18">18+</span>
+          <span class="hero__stat-label">Especialidades</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="100">100%</span>
+          <span class="hero__stat-label">Dedicação</span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="hero__scroll">
-    <span>Explore</span>
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
     <div class="hero__scroll-line"></div>
   </div>
 </section>
@@ -508,23 +532,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <div class="sobre__visual">
         <div class="sobre__img-wrap">
           <img src="images/sala-espera.jpg" alt="Interior da Clínica Saúde Odonto" class="sobre__img" loading="lazy" />
-          <div class="sobre__img-deco"></div>
         </div>
+        <div class="sobre__img-deco" aria-hidden="true"></div>
       </div>
       <div class="sobre__text">
         <span class="section__label">Sobre a Clínica</span>
         <h2 class="section__title">Cuidado dental que<br/><em>vai além do óbvio</em></h2>
-        <p class="sobre__desc">
-          A <strong>Saúde Odonto</strong> foi criada com um propósito claro: oferecer odontologia de alto nível com atendimento humanizado. Nossa clínica une profissionais altamente especializados e um ambiente pensado para o seu conforto e bem-estar.
-        </p>
-        <p class="sobre__desc">
-          Acreditamos que um sorriso saudável transforma vidas. Por isso, cada tratamento é personalizado — do diagnóstico ao resultado final — com foco na sua saúde, estética e qualidade de vida.
-        </p>
+        <p class="sobre__desc">A <strong>Saúde Odonto</strong> foi criada com um propósito claro: oferecer odontologia de alto nível com atendimento humanizado. Nossa clínica une profissionais altamente especializados e um ambiente pensado para o seu conforto e bem-estar.</p>
+        <p class="sobre__desc">Acreditamos que um sorriso saudável transforma vidas. Por isso, cada tratamento é personalizado — do diagnóstico ao resultado final — com foco na sua saúde, estética e qualidade de vida.</p>
         <div class="sobre__features">
-          <div class="sobre__feature"><i class="fas fa-check-circle"></i><span>Atendimento personalizado e humanizado</span></div>
-          <div class="sobre__feature"><i class="fas fa-check-circle"></i><span>Ambiente moderno e acolhedor</span></div>
-          <div class="sobre__feature"><i class="fas fa-check-circle"></i><span>Equipe especializada e qualificada</span></div>
-          <div class="sobre__feature"><i class="fas fa-check-circle"></i><span>Ambiente seguro e acolhedor</span></div>
+          <div class="sobre__feature"><i class="fas fa-check-circle"></i> Atendimento personalizado e humanizado</div>
+          <div class="sobre__feature"><i class="fas fa-check-circle"></i> Ambiente moderno e acolhedor</div>
+          <div class="sobre__feature"><i class="fas fa-check-circle"></i> Equipe especializada e qualificada</div>
+          <div class="sobre__feature"><i class="fas fa-check-circle"></i> Ambiente seguro com protocolos ANVISA</div>
         </div>
       </div>
     </div>
@@ -539,8 +559,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <h2 class="section__title">Profissionais dedicados<br/><em>ao seu sorriso</em></h2>
     </div>
     <div class="equipe__grid">
-
-      <div class="equipe__card">
+      <!-- Dr. Lucas -->
+      <article class="equipe__card">
         <div class="equipe__photo-wrap">
           <img src="images/dr-lucas.jpg" alt="Dr. Lucas Nogueira" class="equipe__photo" loading="lazy" />
           <div class="equipe__photo-overlay"></div>
@@ -550,14 +570,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
           <span class="equipe__cro">CRO-RO 4076</span>
           <div class="equipe__divider"></div>
           <div class="equipe__specs">
-            <span class="equipe__spec"><i class="fas fa-star"></i> Ortodontia</span>
-            <span class="equipe__spec"><i class="fas fa-star"></i> Ortopedia Facial</span>
-            <span class="equipe__spec"><i class="fas fa-star"></i> Aparelhos Invisíveis</span>
+            <span class="equipe__spec"><i class="fas fa-tooth"></i> Implantodontia</span>
+            <span class="equipe__spec"><i class="fas fa-cut"></i> Cirurgia Oral</span>
+            <span class="equipe__spec"><i class="fas fa-star"></i> Estética Dental</span>
           </div>
         </div>
-      </div>
-
-      <div class="equipe__card">
+      </article>
+      <!-- Dra. Gleidiane -->
+      <article class="equipe__card">
         <div class="equipe__photo-wrap">
           <img src="images/dra-gleidiane.jpg" alt="Dra. Gleidiane Nogueira" class="equipe__photo" loading="lazy" />
           <div class="equipe__photo-overlay"></div>
@@ -567,13 +587,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
           <span class="equipe__cro">CRO-RO 3785</span>
           <div class="equipe__divider"></div>
           <div class="equipe__specs">
-            <span class="equipe__spec"><i class="fas fa-star"></i> Odontopediatria</span>
-            <span class="equipe__spec"><i class="fas fa-star"></i> Estética Dental</span>
-            <span class="equipe__spec"><i class="fas fa-star"></i> Harmonização Facial</span>
+            <span class="equipe__spec"><i class="fas fa-teeth"></i> Ortodontia</span>
+            <span class="equipe__spec"><i class="fas fa-child"></i> Odontopediatria</span>
+            <span class="equipe__spec"><i class="fas fa-smile"></i> Harmonização</span>
           </div>
         </div>
-      </div>
-
+      </article>
     </div>
   </div>
 </section>
@@ -583,70 +602,131 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <div class="container">
     <div class="section__header">
       <span class="section__label">Especialidades</span>
-      <h2 class="section__title">Soluções completas para<br/><em>toda a sua saúde bucal</em></h2>
+      <h2 class="section__title">O que fazemos pela<br/><em>sua saúde bucal</em></h2>
+    </div>
+    <div class="servicos__tabs" role="tablist" aria-label="Categorias de serviços">
+      <button class="servicos__tab active" data-tab="clinica" role="tab" aria-selected="true">Clínica Geral</button>
+      <button class="servicos__tab" data-tab="ortodontia" role="tab" aria-selected="false">Ortodontia</button>
+      <button class="servicos__tab" data-tab="estetica" role="tab" aria-selected="false">Estética</button>
     </div>
 
-    <div class="servicos__tabs">
-      <button class="servicos__tab active" data-tab="clinica">Odontologia Clínica</button>
-      <button class="servicos__tab" data-tab="ortodontia">Ortodontia</button>
-      <button class="servicos__tab" data-tab="estetica">Estética &amp; Facial</button>
+    <!-- Clínica Geral -->
+    <div class="servicos__panel active" id="panel-clinica" role="tabpanel">
+      <div class="servicos__grid">
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-tooth"></i></div>
+          <h3 class="servico__title">Implantes Dentários</h3>
+          <p class="servico__desc">Reposição de dentes com titânio de alta qualidade, resultado natural e duradouro.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-teeth"></i></div>
+          <h3 class="servico__title">Próteses Dentárias</h3>
+          <p class="servico__desc">Próteses fixas e removíveis com materiais modernos para reabilitar seu sorriso.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-syringe"></i></div>
+          <h3 class="servico__title">Endodontia</h3>
+          <p class="servico__desc">Tratamento de canal com anestesia eficaz — sem dor e com resultado garantido.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-child"></i></div>
+          <h3 class="servico__title">Odontopediatria</h3>
+          <p class="servico__desc">Atendimento especializado para crianças, com abordagem lúdica e acolhedora.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-cut"></i></div>
+          <h3 class="servico__title">Cirurgia Oral</h3>
+          <p class="servico__desc">Extrações simples e complexas, incluindo sisos, com máximo conforto.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="servico__title">Prevenção & Limpeza</h3>
+          <p class="servico__desc">Profilaxia profissional e orientação para manter sua saúde bucal em dia.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="servicos__panels">
-
-      <div class="servicos__panel active" id="panel-clinica">
-        <div class="servicos__grid">
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-tooth"></i></div><h4 class="servico__title">Implantes Dentários</h4><p class="servico__desc">Recupere a função e estética com implantes de titânio de alta durabilidade.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-magic"></i></div><h4 class="servico__title">Clareamento Dental</h4><p class="servico__desc">Clareamento seguro e eficaz para um sorriso até 8 tons mais claro.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-shield-alt"></i></div><h4 class="servico__title">Prótese Dentária</h4><p class="servico__desc">Próteses fixas e removíveis com alta estética e funcionalidade.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-heartbeat"></i></div><h4 class="servico__title">Tratamento de Canal</h4><p class="servico__desc">Endodontia precisa para salvar dentes naturais com máximo conforto.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-spray-can"></i></div><h4 class="servico__title">Profilaxia &amp; Limpeza</h4><p class="servico__desc">Limpeza profissional e prevenção de doenças periodontais.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-tools"></i></div><h4 class="servico__title">Restaurações</h4><p class="servico__desc">Restaurações em resina composta com resultado natural e duradouro.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-cut"></i></div><h4 class="servico__title">Cirurgia do Siso</h4><p class="servico__desc">Extração de terceiros molares com segurança e mínima invasão.</p></div>
+    <!-- Ortodontia -->
+    <div class="servicos__panel" id="panel-ortodontia" role="tabpanel">
+      <div class="servicos__grid">
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-teeth-open"></i></div>
+          <h3 class="servico__title">Ortodontia Tradicional</h3>
+          <p class="servico__desc">Aparelho metálico e estético para correção de oclusão e alinhamento dental.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-magic"></i></div>
+          <h3 class="servico__title">Alinhadores Invisíveis</h3>
+          <p class="servico__desc">Correção discreta com aparelhos transparentes e removíveis. Tecnologia moderna.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-baby"></i></div>
+          <h3 class="servico__title">Ortodontia Infantil</h3>
+          <p class="servico__desc">Prevenção e correção precoce para garantir o desenvolvimento correto da dentição.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-redo"></i></div>
+          <h3 class="servico__title">Contenção</h3>
+          <p class="servico__desc">Manutenção dos resultados pós-ortodontia com contenções fixas e removíveis.</p>
         </div>
       </div>
+    </div>
 
-      <div class="servicos__panel" id="panel-ortodontia">
-        <div class="servicos__grid">
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-smile"></i></div><h4 class="servico__title">Ortodontia Tradicional</h4><p class="servico__desc">Aparelhos metálicos e estéticos de alta performance para alinhamento completo.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-gem"></i></div><h4 class="servico__title">Aparelho Invisível</h4><p class="servico__desc">Alinhadores transparentes (Fitaliners) — discretos, confortáveis e removíveis.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-child"></i></div><h4 class="servico__title">Odontopediatria</h4><p class="servico__desc">Cuidado especializado para crianças, com ambiente acolhedor e atendimento lúdico.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-expand-arrows-alt"></i></div><h4 class="servico__title">Ortopedia Facial</h4><p class="servico__desc">Correção do crescimento ósseo facial em crianças e adolescentes.</p></div>
+    <!-- Estética -->
+    <div class="servicos__panel" id="panel-estetica" role="tabpanel">
+      <div class="servicos__grid">
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-star"></i></div>
+          <h3 class="servico__title">Clareamento Dental</h3>
+          <p class="servico__desc">Clareamento a laser e caseiro com géis profissionais para um sorriso mais branco.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-gem"></i></div>
+          <h3 class="servico__title">Facetas de Porcelana</h3>
+          <p class="servico__desc">Lâminas de porcelana ultrafinas que transformam forma, cor e alinhamento dos dentes.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-paint-brush"></i></div>
+          <h3 class="servico__title">Resinas Compostas</h3>
+          <p class="servico__desc">Restaurações estéticas com resina da cor do dente para correções naturais e precisas.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-spa"></i></div>
+          <h3 class="servico__title">Harmonização Facial</h3>
+          <p class="servico__desc">Botox, preenchimento e bichectomia para harmonizar e realçar a sua beleza natural.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-smile-beam"></i></div>
+          <h3 class="servico__title">Design do Sorriso</h3>
+          <p class="servico__desc">Planejamento digital completo do sorriso ideal para cada perfil facial.</p>
+        </div>
+        <div class="servico__card">
+          <div class="servico__icon"><i class="fas fa-grin-stars"></i></div>
+          <h3 class="servico__title">Gengivoplastia</h3>
+          <p class="servico__desc">Remodelamento gengival para corrigir o sorriso gengival e expor mais a coroa dos dentes.</p>
         </div>
       </div>
-
-      <div class="servicos__panel" id="panel-estetica">
-        <div class="servicos__grid">
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-certificate"></i></div><h4 class="servico__title">Facetas de Porcelana</h4><p class="servico__desc">Lentes de contato dental para transformar forma, cor e simetria do sorriso.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-leaf"></i></div><h4 class="servico__title">Toxina Botulínica</h4><p class="servico__desc">Aplicação especializada de Botox para rugas e bruxismo com precisão.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-spa"></i></div><h4 class="servico__title">Preenchimento Labial</h4><p class="servico__desc">Harmonização dos lábios com ácido hialurônico para um visual natural.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-star-of-life"></i></div><h4 class="servico__title">Harmonização Facial</h4><p class="servico__desc">Tratamentos integrados para equilíbrio e rejuvenescimento facial.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-syringe"></i></div><h4 class="servico__title">Microagulhamento</h4><p class="servico__desc">Estimulação de colágeno para pele mais firme e saudável.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-seedling"></i></div><h4 class="servico__title">Bioestimuladores</h4><p class="servico__desc">Colágeno e bioestimuladores para restauração do volume e tonicidade facial.</p></div>
-          <div class="servico__card"><div class="servico__icon"><i class="fas fa-bolt"></i></div><h4 class="servico__title">Laserterapia</h4><p class="servico__desc">Laser de baixa intensidade para acelerar cicatrização e tratar lesões bucais.</p></div>
-        </div>
-      </div>
-
     </div>
 
     <div class="servicos__cta">
-      <p>Não encontrou o que procura? Entre em contato — atendemos diversas necessidades.</p>
-      <a href="https://wa.me/5569993402645?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Sa%C3%BAde%20Odonto." target="_blank" rel="noopener" class="btn btn--primary">
-        <i class="fab fa-whatsapp"></i> Falar com a equipe
+      <p>Dúvidas sobre qual tratamento é ideal para você?</p>
+      <a href="https://wa.me/5569993402645?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20tratamentos%20da%20Sa%C3%BAde%20Odonto."
+         target="_blank" rel="noopener" class="btn btn--primary">
+        <i class="fab fa-whatsapp"></i> Fale com a equipe
       </a>
     </div>
   </div>
 </section>
 
-<!-- ===================== ESTRUTURA / GALERIA ===================== -->
+<!-- ===================== GALERIA / ESTRUTURA ===================== -->
 <section class="estrutura section section--alt" id="estrutura">
   <div class="container">
     <div class="section__header">
       <span class="section__label">Nossa Estrutura</span>
-      <h2 class="section__title">Um espaço pensado<br/><em>para o seu conforto</em></h2>
+      <h2 class="section__title">Ambiente pensado para<br/><em>o seu conforto</em></h2>
     </div>
     <div class="galeria__grid">
-      <div class="galeria__item galeria__item--large">
+      <div class="galeria__item">
         <img src="images/sala-espera.jpg" alt="Sala de espera da Saúde Odonto" loading="lazy" />
         <div class="galeria__caption">Sala de Espera</div>
       </div>
@@ -671,18 +751,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 </section>
 
 <!-- ===================== DIFERENCIAIS ===================== -->
-<section class="diferenciais section">
+<section class="diferenciais section" id="diferenciais">
   <div class="container">
+    <div class="section__header">
+      <span class="section__label">Por que nos escolher</span>
+      <h2 class="section__title">O que nos torna<br/><em>diferentes</em></h2>
+    </div>
     <div class="diferenciais__grid">
       <div class="diferencial__item">
         <div class="diferencial__icon"><i class="fas fa-user-md"></i></div>
         <h4>Especialistas<br/>Certificados</h4>
-        <p>Profissionais com formação especializada e registro ativo no CRO.</p>
+        <p>Profissionais com formação específica e registro ativo no CRO-RO.</p>
       </div>
       <div class="diferencial__item">
-        <div class="diferencial__icon"><i class="fas fa-laptop-medical"></i></div>
-        <h4>Diagnóstico<br/>Preciso</h4>
-        <p>Procedimentos realizados com critério clínico, segurança e atenção a cada detalhe.</p>
+        <div class="diferencial__icon"><i class="fas fa-clock"></i></div>
+        <h4>Pontualidade<br/>& Respeito</h4>
+        <p>Valorizamos o seu tempo. Atendimento no horário agendado, sempre.</p>
       </div>
       <div class="diferencial__item">
         <div class="diferencial__icon"><i class="fas fa-heart"></i></div>
@@ -710,17 +794,105 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 </section>
 
+<!-- ===================== AGENDAMENTO (FORMULÁRIO) ===================== -->
+<section class="agendamento section" id="agendamento">
+  <div class="container">
+    <div class="agendamento__grid">
+      <!-- Info -->
+      <div class="agendamento__info">
+        <span class="section__label">Agendamento</span>
+        <h2 class="agendamento__info-title">Agende sua consulta<br/><em>em 1 minuto</em></h2>
+        <p class="agendamento__info-desc">Preencha o formulário e enviaremos uma mensagem direto no WhatsApp da clínica com seus dados. Nossa equipe confirmará o horário em instantes.</p>
+        <div class="agendamento__steps">
+          <div class="agendamento__step">
+            <div class="agendamento__step-num">1</div>
+            <div class="agendamento__step-text">
+              <strong>Preencha seus dados</strong>
+              <span>Nome, telefone e serviço desejado</span>
+            </div>
+          </div>
+          <div class="agendamento__step">
+            <div class="agendamento__step-num">2</div>
+            <div class="agendamento__step-text">
+              <strong>Clique em enviar</strong>
+              <span>Abrirá o WhatsApp com a mensagem pronta</span>
+            </div>
+          </div>
+          <div class="agendamento__step">
+            <div class="agendamento__step-num">3</div>
+            <div class="agendamento__step-text">
+              <strong>Confirme o envio</strong>
+              <span>Nossa equipe responde em até 30 minutos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Formulário -->
+      <div class="form__card">
+        <h3 class="form__card-title">Solicitar Agendamento</h3>
+        <p class="form__card-sub">Rápido, sem cadastro e sem compromisso.</p>
+        <form id="agendamento-form" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="f-nome">Nome completo *</label>
+              <input type="text" id="f-nome" class="form__input" placeholder="Seu nome" required autocomplete="name" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="f-tel">WhatsApp *</label>
+              <input type="tel" id="f-tel" class="form__input" placeholder="(69) 9 9999-9999" required autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="f-servico">Serviço de interesse *</label>
+            <select id="f-servico" class="form__select" required>
+              <option value="" disabled selected>Selecione um serviço</option>
+              <optgroup label="Clínica Geral">
+                <option>Implantes Dentários</option>
+                <option>Próteses Dentárias</option>
+                <option>Endodontia (Canal)</option>
+                <option>Odontopediatria</option>
+                <option>Cirurgia Oral</option>
+                <option>Limpeza / Profilaxia</option>
+              </optgroup>
+              <optgroup label="Ortodontia">
+                <option>Ortodontia Tradicional</option>
+                <option>Alinhadores Invisíveis</option>
+                <option>Ortodontia Infantil</option>
+              </optgroup>
+              <optgroup label="Estética">
+                <option>Clareamento Dental</option>
+                <option>Facetas de Porcelana</option>
+                <option>Resinas Compostas</option>
+                <option>Harmonização Facial</option>
+                <option>Design do Sorriso</option>
+                <option>Gengivoplastia</option>
+              </optgroup>
+              <option>Avaliação Geral</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="f-obs">Observações (opcional)</label>
+            <textarea id="f-obs" class="form__textarea" placeholder="Ex.: Tenho urgência, quero horário pela manhã, etc."></textarea>
+          </div>
+          <button type="submit" class="form__btn">
+            <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+          </button>
+          <p class="form__note">Ao enviar, abrirá o WhatsApp com a mensagem pronta para você confirmar o envio. Nenhum dado é armazenado.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== CONTATO ===================== -->
-<section class="contato section" id="contato">
+<section class="contato section section--alt" id="contato">
   <div class="container">
     <div class="section__header">
       <span class="section__label">Contato &amp; Localização</span>
       <h2 class="section__title">Onde encontrar<br/><em>a Saúde Odonto</em></h2>
     </div>
-    <!-- 2 colunas: info+formulário | mapa -->
     <div class="contato__grid">
-
-      <!-- Coluna esquerda: dados de contato + formulário -->
       <div class="contato__info">
         <div class="contato__item">
           <div class="contato__icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -747,83 +919,31 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
           <div class="contato__icon"><i class="fab fa-instagram"></i></div>
           <div>
             <strong>Instagram</strong>
-            <a href="https://www.instagram.com/saudeodontopvh/" target="_blank" rel="noopener">@saudeodontopvh</a>
+            <a href="https://www.instagram.com/saudeodonto2023/" target="_blank" rel="noopener">@saudeodonto2023</a>
+          </div>
+        </div>
+        <div class="contato__item">
+          <div class="contato__icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Horário de Atendimento</strong>
+            <span>Seg–Sex: 08h–18h<br/>Sábado: 08h–12h</span>
           </div>
         </div>
         <div class="contato__social">
           <a href="https://wa.me/5569993402645" target="_blank" rel="noopener" class="social__btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/saudeodontopvh/" target="_blank" rel="noopener" class="social__btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/saudeodonto2023/" target="_blank" rel="noopener" class="social__btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="mailto:clinicasaudeodontopvh@gmail.com" class="social__btn" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
         </div>
-
-        <!-- ── FORMULÁRIO DE AGENDAMENTO ───────────────── -->
-        <div style="margin-top:40px; padding-top:36px; border-top:1.5px solid var(--color-light);">
-          <p class="contato__form-title">Solicitar <em style="font-style:italic;font-weight:300;">agendamento</em></p>
-          <p class="contato__form-sub">Preencha os dados abaixo e enviaremos sua mensagem direto pelo WhatsApp.</p>
-
-          <form id="agendamento-form" onsubmit="sendWhatsApp(event)" novalidate>
-            <div class="form__row">
-              <div class="form__group">
-                <label class="form__label" for="f-nome">Nome *</label>
-                <input class="form__input" type="text" id="f-nome" name="nome" placeholder="Seu nome completo" required autocomplete="name" />
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="f-tel">Telefone / WhatsApp *</label>
-                <input class="form__input" type="tel" id="f-tel" name="telefone" placeholder="(69) 9 0000-0000" required autocomplete="tel" />
-              </div>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="f-servico">Especialidade de interesse *</label>
-              <select class="form__select" id="f-servico" name="servico" required>
-                <option value="" disabled selected>Selecione uma opção</option>
-                <optgroup label="Clínica Geral">
-                  <option>Avaliação / Consulta Inicial</option>
-                  <option>Limpeza e Profilaxia</option>
-                  <option>Restaurações</option>
-                  <option>Extração Dental</option>
-                  <option>Tratamento de Canal (Endodontia)</option>
-                  <option>Tratamento de Gengiva (Periodontia)</option>
-                  <option>Odontopediatria (Criança)</option>
-                  <option>Próteses Dentárias</option>
-                </optgroup>
-                <optgroup label="Ortodontia">
-                  <option>Aparelho Ortodôntico Metálico</option>
-                  <option>Aparelho Ortodôntico Estético</option>
-                  <option>Alinhador Transparente (Invisalign)</option>
-                </optgroup>
-                <optgroup label="Estética Dental">
-                  <option>Clareamento Dental</option>
-                  <option>Facetas de Porcelana</option>
-                  <option>Lentes de Contato Dental</option>
-                  <option>Implante Dentário</option>
-                  <option>Harmonização Facial / Botox</option>
-                </optgroup>
-                <option>Outra especialidade</option>
-              </select>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="f-msg">Mensagem (opcional)</label>
-              <textarea class="form__textarea" id="f-msg" name="mensagem" placeholder="Alguma observação ou dúvida?"></textarea>
-            </div>
-            <button class="form__btn" type="submit">
-              <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
-            </button>
-            <p class="form__note">Você será redirecionado(a) ao WhatsApp com a mensagem já preenchida.<br/>Sem compromisso — respondemos em instantes.</p>
-          </form>
-        </div>
       </div>
-
-      <!-- Coluna direita: mapa -->
       <div class="contato__mapa">
         <iframe
           src="https://maps.google.com/maps?q=Rua+Pl%C3%A1cido+de+Castro%2C+7591%2C+JK%2C+Porto+Velho%2C+RO%2C+Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed"
           allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="Localização Saúde Odonto">
+          title="Localização Saúde Odonto — Rua Plácido de Castro, 7591, Bairro JK, Porto Velho, RO">
         </iframe>
       </div>
-
     </div>
   </div>
 </section>
@@ -843,6 +963,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
           <li><a href="#equipe">Nossa Equipe</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#estrutura">Estrutura</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
@@ -861,15 +982,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
         <p><i class="fas fa-map-marker-alt"></i> Rua Plácido de Castro, 7591 — Bairro JK, Porto Velho, RO</p>
         <p><i class="fab fa-whatsapp"></i> (69) 9 9340-2645</p>
         <p><i class="fas fa-envelope"></i> clinicasaudeodontopvh@gmail.com</p>
+        <p><i class="fas fa-clock"></i> Seg–Sex 08h–18h · Sáb 08h–12h</p>
       </div>
     </div>
     <div class="footer__bottom">
       <p>© 2025 Saúde Odonto — Clínica Odontológica. Todos os direitos reservados.</p>
       <p>Dr. Lucas Nogueira · CRO-RO 4076 &nbsp;|&nbsp; Dra. Gleidiane Nogueira · CRO-RO 3785</p>
-      <p style="font-size:.6875rem;color:rgba(255,255,255,.15);margin-top:4px;">
-        Este site respeita sua privacidade conforme a <strong style="color:rgba(255,255,255,.25);">LGPD (Lei 13.709/2018)</strong>.
-        Os dados informados no formulário de agendamento são utilizados exclusivamente para contato e não são compartilhados com terceiros.
-      </p>
+      <p class="footer__lgpd">Em conformidade com a <strong>LGPD (Lei 13.709/2018)</strong>. Este site não armazena dados pessoais dos visitantes. Ao usar o formulário de agendamento, você será redirecionado para o WhatsApp — nenhuma informação é retida por nós.</p>
     </div>
   </div>
 </footer>
@@ -926,9 +1045,10 @@ document.addEventListener('click', e => { if (!header.contains(e.target) && navL
 /* ── TABS SERVIÇOS ──────────────────────────────────────────── */
 document.querySelectorAll('.servicos__tab').forEach(tab => {
   tab.addEventListener('click', () => {
-    document.querySelectorAll('.servicos__tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.servicos__tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
     document.querySelectorAll('.servicos__panel').forEach(p => p.classList.remove('active'));
     tab.classList.add('active');
+    tab.setAttribute('aria-selected','true');
     const panel = document.getElementById('panel-' + tab.dataset.tab);
     if (panel) panel.classList.add('active');
   });
@@ -1024,41 +1144,41 @@ document.querySelectorAll('.galeria__item').forEach(item => {
   });
 });
 
-/* ── FORMULÁRIO WHATSAPP ─────────────────────────────────── */
+/* ── MÁSCARA TELEFONE ───────────────────────────────────────── */
+(function maskTel() {
+  const tel = document.getElementById('f-tel');
+  if (!tel) return;
+  tel.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g, '').substring(0, 11);
+    if (v.length > 2)  v = '(' + v.substring(0,2) + ') ' + v.substring(2);
+    if (v.length > 10) v = v.substring(0,10) + '-' + v.substring(10);
+    this.value = v;
+  });
+})();
+
+/* ── FORMULÁRIO → WHATSAPP ──────────────────────────────────── */
 function sendWhatsApp(e) {
   e.preventDefault();
-  const nome     = document.getElementById('f-nome').value.trim();
-  const tel      = document.getElementById('f-tel').value.trim();
-  const servico  = document.getElementById('f-servico').value;
-  const msg      = document.getElementById('f-msg').value.trim();
+  const nome    = document.getElementById('f-nome').value.trim();
+  const tel     = document.getElementById('f-tel').value.trim();
+  const servico = document.getElementById('f-servico').value;
+  const obs     = document.getElementById('f-obs').value.trim();
 
-  if (!nome || !tel || !servico) {
-    alert('Por favor, preencha Nome, Telefone e Especialidade.');
-    return;
-  }
+  if (!nome) { alert('Por favor, informe seu nome.'); document.getElementById('f-nome').focus(); return; }
+  if (!tel || tel.replace(/\D/g,'').length < 10) { alert('Por favor, informe um WhatsApp válido.'); document.getElementById('f-tel').focus(); return; }
+  if (!servico) { alert('Por favor, selecione o serviço desejado.'); document.getElementById('f-servico').focus(); return; }
 
-  let texto = `Olá! Gostaria de agendar uma consulta na Saúde Odonto.%0A%0A`;
-  texto += `*Nome:* ${encodeURIComponent(nome)}%0A`;
-  texto += `*Telefone:* ${encodeURIComponent(tel)}%0A`;
-  texto += `*Especialidade:* ${encodeURIComponent(servico)}%0A`;
-  if (msg) texto += `*Mensagem:* ${encodeURIComponent(msg)}%0A`;
-  texto += `%0AAguardo o retorno. Obrigado!`;
+  let msg = `Olá! Gostaria de agendar uma consulta na Saúde Odonto.%0A%0A`;
+  msg += `*Nome:* ${encodeURIComponent(nome)}%0A`;
+  msg += `*Telefone:* ${encodeURIComponent(tel)}%0A`;
+  msg += `*Serviço:* ${encodeURIComponent(servico)}`;
+  if (obs) msg += `%0A*Observações:* ${encodeURIComponent(obs)}`;
 
-  window.open(`https://wa.me/5569993402645?text=${texto}`, '_blank', 'noopener,noreferrer');
-
-  // Reset form
-  document.getElementById('agendamento-form').reset();
+  window.open(`https://wa.me/5569993402645?text=${msg}`, '_blank');
 }
 
-/* ── MÁSCARA DE TELEFONE ────────────────────────────────── */
-document.getElementById('f-tel').addEventListener('input', function() {
-  let v = this.value.replace(/\D/g, '');
-  if (v.length > 11) v = v.slice(0, 11);
-  if (v.length > 7)       v = '(' + v.slice(0,2) + ') ' + v.slice(2,3) + ' ' + v.slice(3,7) + '-' + v.slice(7);
-  else if (v.length > 3)  v = '(' + v.slice(0,2) + ') ' + v.slice(2);
-  else if (v.length > 0)  v = '(' + v;
-  this.value = v;
-});
+const form = document.getElementById('agendamento-form');
+if (form) form.addEventListener('submit', sendWhatsApp);
 
 console.log('%c🦷 Saúde Odonto — Site carregado com sucesso!', 'color:#343434;font-weight:bold;font-size:14px;');
 </script>
