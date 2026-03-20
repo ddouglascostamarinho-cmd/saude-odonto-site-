@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://saudeodontopvh.com.br/sitemap.xml

@@ -1,93 +1,103 @@
-# 🦷 Saúde Odonto — Site Institucional
+# Saúde Odonto — Site Institucional v3
 
-**URL Produção:** https://saude-odonto-site.pages.dev  
-**Domínio:** https://saudeodontopvh.com.br *(em propagação DNS)*  
-**Repositório GitHub:** https://github.com/ddouglascostamarinho-cmd/saude-odonto-site-
+**Clínica Odontológica | Porto Velho, RO**
+Site: [saudeodontopvh.com.br](https://saudeodontopvh.com.br) | [saude-odonto-site.pages.dev](https://saude-odonto-site.pages.dev)
 
 ---
 
 ## ✅ Funcionalidades Implementadas
 
-### SEO & Performance
-- Title tag otimizado com palavras-chave locais
-- Meta description com nomes dos dentistas e CROs
-- URL canônica `https://saudeodontopvh.com.br/`
-- Local SEO: `geo.region: BR-RO`, `geo.placename: Porto Velho`
-- Open Graph completo (Facebook, WhatsApp, LinkedIn)
-- Twitter Card `summary_large_image`
-- Schema.org JSON-LD tipo `Dentist` / `LocalBusiness`
-- Preload hero image (reduz LCP)
-- `sitemap.xml`, `robots.txt`, `favicon.svg`, `site.webmanifest`
+### SEO Completo
+- Title tag otimizado para "Dentista em Porto Velho RO"
+- Meta description com nomes dos doutores e CROs
+- URL canônica: `https://saudeodontopvh.com.br/`
+- Open Graph (Facebook, WhatsApp, LinkedIn)
+- Twitter Card (summary_large_image)
+- Local SEO: geo.region BR-RO, geo.placename Porto Velho, coordenadas GPS
+- Preload do hero image (melhora LCP)
 
-### Visual & UX
-- Header transparente com transição ao scroll
-- Logo 56px no header (branca sobre dark, colorida após scroll)
-- **Logo 80px no footer** com `filter: brightness(0) invert(1)` *(v2)*
-- **Tagline footer legível** (opacidade 0.6, fonte 0.9375rem) *(v2)*
-- **Botão "Agendar" com contraste melhorado** no header *(v2)*
-- **Hero `background-position: center 40%`** (evita marca d'água) *(v2)*
-- **Seções com padding 80px** (reduzido de 100px) *(v2)*
-- Fotos dos dentistas com `aspect-ratio: 3/4` e `object-position: top`
-- Galeria com lightbox
-- WhatsApp flutuante com animação pulse
-- Animações de entrada (Intersection Observer)
-- Mobile-first totalmente responsivo
+### Schema.org JSON-LD (Dentist / LocalBusiness)
+- Tipo: Dentist + MedicalBusiness + LocalBusiness
+- Endereço completo: Rua Plácido de Castro, 7591 — JK, Porto Velho
+- Horários: Seg–Sex 08h–18h, Sáb 08h–12h
+- Dr. Lucas Nogueira (CRO-RO 4076), Dra. Gleidiane Nogueira (CRO-RO 3785)
+- Especialidades, telefone, e-mail, Instagram, coordenadas geo
 
-### Formulário de Agendamento
-- Campos: Nome, WhatsApp (máscara automática), Serviço (select), Observações
-- Envio direto ao WhatsApp — **zero backend**
-- Aviso LGPD no footer
+### Design e Layout
+- Identidade visual: #343434 · #b9bdbe · #ddd5d6 · #FFFFFF · #c9a96e (ouro)
+- Fontes: Cormorant Garamond (serif) + DM Sans (sans)
+- Animações fade-in em scroll
+- Responsivo mobile-first
 
-### Seções do Site
-1. Hero com stats (2 especialistas, 18+ especialidades, 100% dedicação)
-2. Sobre a Clínica
-3. Equipe (Dr. Lucas + Dra. Gleidiane)
-4. Serviços com tabs (Clínica Geral / Ortodontia / Estética)
-5. Galeria / Estrutura
-6. Diferenciais
-7. CTA Banner
-8. Formulário de Agendamento
-9. Contato + Mapa Google
-10. Footer completo
+### Seções
+1. **Header** — fixo, transparente, logo 56px, botão Agendar com contraste reforçado
+2. **Hero** — imagem local `sala-espera.jpg`, bg-position: center 40%, contador animado (fixo: 2 / 18+ / 100%)
+3. **Sobre** — foto da clínica + texto + lista de diferenciais
+4. **Equipe** — Dr. Lucas + Dra. Gleidiane, fotos 3:4 com object-position: top
+5. **Serviços** — 20+ serviços em tabs (5 categorias)
+6. **Galeria** — grid assimétrico com fotos locais
+7. **Diferenciais** — 4 cards com ícones
+8. **CTA Banner** — fundo dourado com botão WhatsApp
+9. **Contato** — endereço, horários, badge "Atendimento Especial", mapa
+10. **Agendamento** — formulário WhatsApp (sem backend) com máscara de telefone
+11. **Footer** — logo 80px, tagline legível, contato, LGPD
+
+### Melhorias v3 (9 correções aplicadas)
+| # | Correção | Detalhe |
+|---|---|---|
+| 1 | Logo footer | 40px → **80px** + filtro branco |
+| 2 | Números hero | JS: sempre restaura `18+`, `100%`, `2` |
+| 3 | Padding seções | 100px → **80px** |
+| 4 | Imagens locais | Todas apontam para `images/` |
+| 5 | Tagline footer | `.9375rem`, opacidade **0.60** |
+| 6 | Texto footer | opacity **0.40** |
+| 7 | Botão Agendar | `rgba(255,255,255,.12)`, border `.85`, font-weight 600 |
+| 8 | Hero bg-position | `center 40%` (reduz marca d'água) |
+| 9 | Atendimento Especial | Badge escuro com CTA WhatsApp direto |
+
+### Arquivos extras
+- `favicon.svg` — ícone na aba do navegador
+- `sitemap.xml` — indexação Google
+- `robots.txt` — instrução para rastreadores
+- `site.webmanifest` — instalação como PWA no mobile
 
 ---
 
 ## 📁 Estrutura de Arquivos
 
 ```
-index.html          ← Página principal
-favicon.svg         ← Ícone do navegador
-sitemap.xml         ← Indexação Google
-robots.txt          ← Rastreadores web
-site.webmanifest    ← PWA / Instalar como app
+index.html           ← Página principal (todas as seções)
+favicon.svg          ← Favicon SVG (ícone da aba)
+sitemap.xml          ← Sitemap para Google Search Console
+robots.txt           ← Regras para rastreadores
+site.webmanifest     ← PWA manifest
 images/
-  ├── logo.png
-  ├── sala-espera.jpg
-  ├── recepcao.jpg
-  ├── equipe.jpg
-  ├── dr-lucas.jpg
-  ├── dra-gleidiane.jpg
-  ├── sala-atendimento-1.jpg
-  └── sala-atendimento-2.jpg
+  logo.png           ← Logo da clínica (branch do GitHub)
+  sala-espera.jpg    ← Foto hero + galeria
+  recepcao.jpg       ← Recepção
+  sala-atendimento-1.jpg  ← Consultório Dr. Lucas
+  sala-atendimento-2.jpg  ← Consultório Dra. Gleidiane
+  dr-lucas.jpg       ← Foto Dr. Lucas
+  dra-gleidiane.jpg  ← Foto Dra. Gleidiane
+  equipe.jpg         ← Foto equipe
 ```
 
 ---
 
-## 🚀 Deploy
+## 🚀 Deploy no GitHub + Cloudflare
 
-**Cloudflare Pages** — auto-deploy via GitHub commit.  
-Cada push ao `main` do repositório publica em ~30 segundos.
+1. Acesse: [github.com/ddouglascostamarinho-cmd/saude-odonto-site-](https://github.com/ddouglascostamarinho-cmd/saude-odonto-site-)
+2. **Add file → Upload files**
+3. Suba: `index.html`, `favicon.svg`, `sitemap.xml`, `robots.txt`, `site.webmanifest`
+4. Commit → Cloudflare publica em ~30s ✅
 
----
-
-## 📋 Pendente
-
-- [ ] Vincular domínio `saudeodontopvh.com.br` no Cloudflare Pages (aguardando DNS ativo)
-- [ ] Enviar `sitemap.xml` ao Google Search Console
-- [ ] Configurar e-mail profissional via Cloudflare Email Routing
-- [ ] Adicionar depoimentos de pacientes quando disponível
-- [ ] Google Analytics / GTM
+> ⚠️ A pasta `images/` já está no GitHub — **não precisa subir novamente.**
 
 ---
 
-*Atualizado: 2026-03-20 — v2 com 8 melhorias visuais*
+## 📊 KPIs para acompanhar
+
+- Site: [saude-odonto-site.pages.dev](https://saude-odonto-site.pages.dev)
+- Domínio: saudeodontopvh.com.br (DNS propagando ~1-4h)
+- Google Search Console: enviar sitemap após domínio ativar
+- Instagram: [@saudeodonto2023](https://www.instagram.com/saudeodonto2023/)
