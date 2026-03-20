@@ -1,109 +1,93 @@
-# Saúde Odonto — Site Institucional
+# 🦷 Saúde Odonto — Site Institucional
 
-**Clínica odontológica em Porto Velho, RO**  
-Dr. Lucas Nogueira (CRO-RO 4076) · Dra. Gleidiane Nogueira (CRO-RO 3785)
-
----
-
-## URLs de produção
-
-| Ambiente | URL |
-|---|---|
-| Domínio oficial | https://saudeodontopvh.com.br |
-| Cloudflare Pages | https://saude-odonto-site.pages.dev |
-| GitHub (repo) | https://github.com/ddouglascostamarinho-cmd/saude-odonto-site- |
+**URL Produção:** https://saude-odonto-site.pages.dev  
+**Domínio:** https://saudeodontopvh.com.br *(em propagação DNS)*  
+**Repositório GitHub:** https://github.com/ddouglascostamarinho-cmd/saude-odonto-site-
 
 ---
 
-## Estrutura do projeto
+## ✅ Funcionalidades Implementadas
+
+### SEO & Performance
+- Title tag otimizado com palavras-chave locais
+- Meta description com nomes dos dentistas e CROs
+- URL canônica `https://saudeodontopvh.com.br/`
+- Local SEO: `geo.region: BR-RO`, `geo.placename: Porto Velho`
+- Open Graph completo (Facebook, WhatsApp, LinkedIn)
+- Twitter Card `summary_large_image`
+- Schema.org JSON-LD tipo `Dentist` / `LocalBusiness`
+- Preload hero image (reduz LCP)
+- `sitemap.xml`, `robots.txt`, `favicon.svg`, `site.webmanifest`
+
+### Visual & UX
+- Header transparente com transição ao scroll
+- Logo 56px no header (branca sobre dark, colorida após scroll)
+- **Logo 80px no footer** com `filter: brightness(0) invert(1)` *(v2)*
+- **Tagline footer legível** (opacidade 0.6, fonte 0.9375rem) *(v2)*
+- **Botão "Agendar" com contraste melhorado** no header *(v2)*
+- **Hero `background-position: center 40%`** (evita marca d'água) *(v2)*
+- **Seções com padding 80px** (reduzido de 100px) *(v2)*
+- Fotos dos dentistas com `aspect-ratio: 3/4` e `object-position: top`
+- Galeria com lightbox
+- WhatsApp flutuante com animação pulse
+- Animações de entrada (Intersection Observer)
+- Mobile-first totalmente responsivo
+
+### Formulário de Agendamento
+- Campos: Nome, WhatsApp (máscara automática), Serviço (select), Observações
+- Envio direto ao WhatsApp — **zero backend**
+- Aviso LGPD no footer
+
+### Seções do Site
+1. Hero com stats (2 especialistas, 18+ especialidades, 100% dedicação)
+2. Sobre a Clínica
+3. Equipe (Dr. Lucas + Dra. Gleidiane)
+4. Serviços com tabs (Clínica Geral / Ortodontia / Estética)
+5. Galeria / Estrutura
+6. Diferenciais
+7. CTA Banner
+8. Formulário de Agendamento
+9. Contato + Mapa Google
+10. Footer completo
+
+---
+
+## 📁 Estrutura de Arquivos
 
 ```
-index.html            ← Página principal (HTML + CSS + JS inline)
-favicon.svg           ← Ícone da aba do navegador
-sitemap.xml           ← Mapa do site para Google
-robots.txt            ← Instruções para rastreadores
-site.webmanifest      ← Configuração PWA / mobile
+index.html          ← Página principal
+favicon.svg         ← Ícone do navegador
+sitemap.xml         ← Indexação Google
+robots.txt          ← Rastreadores web
+site.webmanifest    ← PWA / Instalar como app
 images/
-  logo.png            ← Logo colorida (header scrolled)
-  logo-white.png      ← Logo branca (footer)
-  sala-espera.jpg     ← Foto hero background + seção Sobre
-  recepcao.jpg        ← Foto CTA banner background
-  dr-lucas.jpg        ← Foto do Dr. Lucas
-  dra-gleidiane.jpg   ← Foto da Dra. Gleidiane
-  equipe.jpg          ← Foto da equipe juntos
-  sala-atendimento-1.jpg  ← Consultório 02 — Dr. Lucas
-  sala-atendimento-2.jpg  ← Consultório 01 — Dra. Gleidiane
+  ├── logo.png
+  ├── sala-espera.jpg
+  ├── recepcao.jpg
+  ├── equipe.jpg
+  ├── dr-lucas.jpg
+  ├── dra-gleidiane.jpg
+  ├── sala-atendimento-1.jpg
+  └── sala-atendimento-2.jpg
 ```
 
 ---
 
-## Seções do site
+## 🚀 Deploy
 
-| Seção | ID | Descrição |
-|---|---|---|
-| Hero | `#inicio` | Banner principal com foto, título, stats e CTAs |
-| Sobre | `#sobre` | Apresentação da clínica |
-| Equipe | `#equipe` | Cards Dr. Lucas e Dra. Gleidiane |
-| Serviços | `#servicos` | 3 abas: Clínica Geral, Ortodontia, Estética |
-| Estrutura | `#estrutura` | Galeria com lightbox |
-| Diferenciais | `#diferenciais` | 4 cards de diferencial |
-| CTA Banner | — | Banner dark com WhatsApp |
-| Agendamento | `#agendamento` | Formulário → WhatsApp (sem backend) |
-| Contato | `#contato` | Info + mapa Google |
-| Footer | — | Links + LGPD |
+**Cloudflare Pages** — auto-deploy via GitHub commit.  
+Cada push ao `main` do repositório publica em ~30 segundos.
 
 ---
 
-## SEO implementado
+## 📋 Pendente
 
-- **Title** otimizado para "dentista porto velho"
-- **Meta description** com CROs dos especialistas
-- **Canonical URL** apontando para o domínio oficial
-- **Open Graph** completo (Facebook, WhatsApp, LinkedIn)
-- **Twitter Card** summary_large_image
-- **Geo Local SEO** (geo.region, geo.placename)
-- **Schema.org JSON-LD** tipo `Dentist` + `LocalBusiness`
-  - Endereço, telefone, horários, especialistas, especialidades
-- **Preload** da imagem hero (reduz LCP)
-- **Favicon SVG** + webmanifest
+- [ ] Vincular domínio `saudeodontopvh.com.br` no Cloudflare Pages (aguardando DNS ativo)
+- [ ] Enviar `sitemap.xml` ao Google Search Console
+- [ ] Configurar e-mail profissional via Cloudflare Email Routing
+- [ ] Adicionar depoimentos de pacientes quando disponível
+- [ ] Google Analytics / GTM
 
 ---
 
-## Formulário de agendamento
-
-- Campos: Nome, WhatsApp, Serviço, Observações
-- Máscara automática no campo telefone
-- Ao submeter: abre WhatsApp com mensagem formatada
-- **Zero backend** — nenhum dado é armazenado
-- **Compatível com LGPD** — aviso no footer
-
----
-
-## Deploy
-
-**Fluxo automático:**
-```
-Editar index.html (Genspark) → Exportar ZIP → Extrair → Upload GitHub → Cloudflare Pages publica em ~30s
-```
-
-**Manual (Cloudflare Pages):**
-- Arrastar pasta para: https://dash.cloudflare.com/workers-and-pages
-
----
-
-## Contato da clínica
-
-- WhatsApp: (69) 9 9340-2645 → https://wa.me/5569993402645
-- E-mail: clinicasaudeodontopvh@gmail.com
-- Instagram: @saudeodonto2023
-- Endereço: Rua Plácido de Castro, 7591 — Bairro JK, Porto Velho, RO
-
----
-
-## Próximos passos sugeridos
-
-- [ ] Configurar Google Analytics 4 (GA4)
-- [ ] Registrar no Google Search Console
-- [ ] Configurar Cloudflare Email Routing para email profissional
-- [ ] Adicionar depoimentos de pacientes (quando disponíveis)
-- [ ] Foto profissional da Dra. Gleidiane com jaleco
+*Atualizado: 2026-03-20 — v2 com 8 melhorias visuais*

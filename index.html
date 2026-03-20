@@ -165,7 +165,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ── CONTAINER & SECTION ─────────────────────────────────── */
 .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-.section    { padding: 100px 0; }
+.section    { padding: 80px 0; }
 .section--alt { background: var(--color-off); }
 
 /* ── TYPOGRAPHY ──────────────────────────────────────────── */
@@ -212,9 +212,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav__link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: currentColor; transition: width .3s ease; }
 .nav__link:hover::after, .nav__link.active::after { width: 100%; }
 .nav__link:hover { opacity: .7; }
-.nav__cta { margin-left: 8px; color: rgba(255,255,255,.9) !important; border-color: rgba(255,255,255,.5) !important; padding: 10px 20px; font-size: .8125rem; }
+.nav__cta { margin-left: 8px; color: #fff !important; border-color: rgba(255,255,255,.85) !important; padding: 10px 20px; font-size: .8125rem; background: rgba(255,255,255,.12) !important; font-weight: 600; }
 .header.scrolled .nav__cta { color: var(--color-dark) !important; border-color: var(--color-dark) !important; }
-.nav__cta:hover { background: rgba(255,255,255,.2) !important; }
+.nav__cta:hover { background: rgba(255,255,255,.25) !important; border-color: #fff !important; }
 .header.scrolled .nav__cta:hover { background: var(--color-dark) !important; color: var(--color-white) !important; }
 .nav__toggle { display: none; flex-direction: column; gap: 5px; padding: 8px; margin-left: auto; }
 .nav__toggle span { display: block; width: 24px; height: 2px; background: rgba(255,255,255,.85); border-radius: 2px; transition: var(--transition); }
@@ -222,7 +222,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ── HERO ────────────────────────────────────────────────── */
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; background: var(--color-dark); }
-.hero__bg { position: absolute; inset: 0; background-image: url('images/sala-espera.jpg'); background-size: cover; background-position: center; transform: scale(1.05); animation: heroZoom 15s ease-in-out infinite alternate; }
+.hero__bg { position: absolute; inset: 0; background-image: url('images/sala-espera.jpg'); background-size: cover; background-position: center 40%; transform: scale(1.05); animation: heroZoom 15s ease-in-out infinite alternate; }
 @keyframes heroZoom { from { transform: scale(1.05); } to { transform: scale(1.12); } }
 .hero__overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(52,52,52,.88) 0%, rgba(52,52,52,.65) 50%, rgba(52,52,52,.48) 100%); }
 .hero__content { position: relative; z-index: 2; padding-top: calc(var(--nav-height) + 40px); padding-bottom: 80px; max-width: 720px; }
@@ -391,8 +391,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ── FOOTER ──────────────────────────────────────────────── */
 .footer { background: var(--color-dark); padding: 80px 0 0; }
 .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 2fr; gap: 48px; padding-bottom: 64px; border-bottom: 1px solid rgba(255,255,255,.08); }
-.footer__logo { height: 40px; width: auto; object-fit: contain; margin-bottom: 16px; opacity: .75; }
-.footer__brand p { font-size: .875rem; color: rgba(255,255,255,.35); line-height: 1.7; max-width: 260px; }
+.footer__logo { height: 80px; width: auto; object-fit: contain; margin-bottom: 20px; opacity: .9; filter: brightness(0) invert(1); }
+.footer__brand p { font-size: .9375rem; color: rgba(255,255,255,.6); line-height: 1.7; max-width: 280px; }
 .footer__nav h5, .footer__contact h5 { font-size: .6875rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 20px; }
 .footer__nav ul { display: flex; flex-direction: column; gap: 10px; }
 .footer__nav a { font-size: .875rem; color: rgba(255,255,255,.45); transition: var(--transition); }
@@ -400,8 +400,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer__contact p { font-size: .875rem; color: rgba(255,255,255,.45); line-height: 1.7; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
 .footer__contact i { color: rgba(255,255,255,.3); flex-shrink: 0; margin-top: 3px; font-size: .875rem; }
 .footer__bottom { padding: 24px 0; display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; }
-.footer__bottom p { font-size: .75rem; color: rgba(255,255,255,.2); letter-spacing: .03em; }
-.footer__lgpd { font-size: .7rem !important; color: rgba(255,255,255,.15) !important; }
+.footer__bottom p { font-size: .8125rem; color: rgba(255,255,255,.4); letter-spacing: .03em; }
+.footer__lgpd { font-size: .75rem !important; color: rgba(255,255,255,.3) !important; }
 .footer__lgpd a { color: rgba(255,255,255,.3); text-decoration: underline; }
 .footer__lgpd a:hover { color: rgba(255,255,255,.6); }
 
@@ -953,7 +953,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="images/logo-white.png" alt="Saúde Odonto" class="footer__logo" />
+        <img src="images/logo.png" alt="Saúde Odonto" class="footer__logo" onerror="this.onerror=null;" />
         <p>Cuidado, confiança e excelência para o seu sorriso em Porto Velho, Rondônia.</p>
       </div>
       <div class="footer__nav">
@@ -1098,7 +1098,8 @@ document.querySelectorAll('.servicos__tab').forEach(tab => {
       heroStats.querySelectorAll('.hero__stat-number').forEach(el => {
         const raw = el.getAttribute('data-target') || el.textContent;
         const num = parseInt(raw);
-        const suffix = el.textContent.replace(/[0-9]/g, '');
+        const origText = el.textContent;
+        const suffix = origText.replace(/[0-9]/g, '');
         const start = performance.now();
         const dur = 1400;
         (function tick(now) {
@@ -1106,6 +1107,7 @@ document.querySelectorAll('.servicos__tab').forEach(tab => {
           const ease = 1 - Math.pow(1 - p, 3);
           el.textContent = Math.round(ease * num) + suffix;
           if (p < 1) requestAnimationFrame(tick);
+          else el.textContent = origText; /* Garante que o valor final seja exatamente o original */
         })(start);
       });
     }

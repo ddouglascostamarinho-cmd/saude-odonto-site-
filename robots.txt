@@ -2,6 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://saudeodontopvh.com.br/sitemap.xml
-
-# Não indexar SVGs de placeholder
-Disallow: /images/*.svg
