@@ -1017,7 +1017,15 @@ section    { padding: 80px 0; }   /* MELHORIA 3: reduzido de 100px → 80px */
   justify-content: center;
   gap: 2rem;
 }
-.mobile-menu.open { display: flex; }
+.mobile-menu.open {
+  display: flex;
+  justify-content: safe center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  gap: clamp(.5rem, 3.2dvh, 2rem);
+  padding: 3.5rem 1rem 1rem;
+}
+.mobile-menu > * { flex-shrink: 0; }
 .mobile-menu__close {
   position: absolute;
   top: 1.5rem; right: 1.5rem;
@@ -1299,7 +1307,7 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
             Agendar consulta
           </a>
         </div>
-        <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu">
+        <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </nav>
@@ -1421,8 +1429,9 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
 
         <article class="equipe__card fade-in">
           <img
-            src="images/dr-lucas.jpg"
+            src="images/dr-lucas.jpg?v=20261109"
             alt="Dr. Lucas Nogueira — CRO-RO 4076"
+            decoding="async"
             class="equipe__photo"
             loading="lazy"
           />
@@ -1489,7 +1498,7 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
         <div class="servico__card active" data-group="implantes">
           <div class="servico__icon"><i class="fas fa-user-md"></i></div>
           <h3 class="servico__name">Endodontia</h3>
-          <p class="servico__desc">Tratamento de canal com anestesia eficaz — sem dor e com resultado garantido.</p>
+          <p class="servico__desc">Tratamento de canal indicado após avaliação odontológica para tratar alterações na parte interna do dente.</p>
         </div>
         <div class="servico__card active" data-group="implantes">
           <div class="servico__icon"><i class="fas fa-child"></i></div>
@@ -1632,7 +1641,7 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
       <div class="cta-banner__inner">
         <div class="cta-banner__text">
           <h2>Pronto para transformar<br>seu sorriso?</h2>
-          <p>Agende uma avaliação sem compromisso. Nossa equipe está pronta.</p>
+          <p>Fale com nossa equipe para consultar horários e marcar sua avaliação.</p>
         </div>
         <a href="https://wa.me/5569993402645?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Saúde%20Odonto."
            class="btn btn--dark" target="_blank" rel="noopener">
@@ -1764,10 +1773,10 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
       <div class="agendamento__grid">
         <div>
           <span class="section__label">Agendamento</span>
-          <h2 class="section__title">Agende sua consulta<br><em>em 1 minuto</em></h2>
+          <h2 class="section__title">Solicite sua consulta<br><em>pelo WhatsApp</em></h2>
           <p class="section__sub">
-            Preencha o formulário e enviaremos uma mensagem direto no WhatsApp da clínica.
-            Nossa equipe confirmará o horário em instantes.
+            Preencha o formulário para abrir o WhatsApp com a mensagem pronta.
+            Após o envio, a equipe confirma a disponibilidade do horário.
           </p>
           <div class="agendamento__steps">
             <div class="agendamento__step">
@@ -1788,7 +1797,7 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
               <div class="step__num">3</div>
               <div>
                 <p class="step__title">Confirme o envio</p>
-                <p class="step__desc">Nossa equipe responde em até 30 minutos</p>
+                <p class="step__desc">Aguarde a confirmação da equipe</p>
               </div>
             </div>
           </div>
@@ -1796,16 +1805,16 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
 
         <div class="agendamento__form-wrap fade-in">
           <h3 class="agendamento__form-title">Solicitar Agendamento</h3>
-          <p class="agendamento__form-sub">Rápido, sem cadastro e sem compromisso.</p>
+          <p class="agendamento__form-sub">Informe seus dados para iniciar o contato com a clínica.</p>
 
           <form id="agendamento-form" novalidate>
             <div class="form__group">
               <label for="f-nome">Nome *</label>
-              <input type="text" id="f-nome" name="nome" placeholder="Seu nome completo" required />
+              <input type="text" id="f-nome" name="nome" autocomplete="name" placeholder="Seu nome completo" required />
             </div>
             <div class="form__group">
               <label for="f-tel">WhatsApp *</label>
-              <input type="tel" id="f-tel" name="telefone" placeholder="(69) 9 9999-9999" required />
+              <input type="tel" id="f-tel" name="telefone" autocomplete="tel-national" placeholder="(69) 9 9999-9999" required />
               <p class="form__hint">Usaremos apenas para confirmar seu agendamento</p>
             </div>
             <div class="form__group">
@@ -1915,9 +1924,35 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
   const menuClose   = document.getElementById('menu-close');
   const menuLinks   = document.querySelectorAll('.menu-link');
 
-  hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
-  menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-  menuLinks.forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+  function toggleMobileMenu(open, restoreFocus = false) {
+    mobileMenu.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+    if (open) menuClose.focus({ preventScroll: true });
+    else if (restoreFocus) hamburger.focus({ preventScroll: true });
+  }
+
+  hamburger.addEventListener('click', () => toggleMobileMenu(true));
+  menuClose.addEventListener('click', () => toggleMobileMenu(false, true));
+  menuLinks.forEach(link => link.addEventListener('click', () => toggleMobileMenu(false)));
+  document.addEventListener('keydown', event => {
+    if (!mobileMenu.classList.contains('open')) return;
+    if (event.key === 'Escape') toggleMobileMenu(false, true);
+    if (event.key === 'Tab') {
+      const first = menuClose;
+      const last = menuLinks[menuLinks.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+  const mobileViewport = matchMedia('(max-width: 768px)');
+  mobileViewport.addEventListener('change', event => {
+    if (!event.matches) toggleMobileMenu(false);
+  });
 
   // ── TABS SERVIÇOS ──────────────────────────────────────────────
   const tabBtns  = document.querySelectorAll('.tab-btn');
@@ -1981,10 +2016,11 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
 
   // Máscara telefone
   document.getElementById('f-tel').addEventListener('input', function () {
-    let v = this.value.replace(/\D/g, '').slice(0, 11);
-    if (v.length > 10)
+    let v = this.value.replace(/\D/g, '');
+    if (v.length >= 12 && v.length <= 13 && v.startsWith('55')) v = v.slice(2);
+    if (v.length === 11)
       v = v.replace(/^(\d{2})(\d{1})(\d{4})(\d{4})$/, '($1) $2 $3-$4');
-    else if (v.length > 6)
+    else if (v.length > 6 && v.length <= 10)
       v = v.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
     else if (v.length > 2)
       v = v.replace(/^(\d{2})(\d+)$/, '($1) $2');
@@ -2000,6 +2036,12 @@ a:focus-visible,button:focus-visible { outline:2px solid #81946d; outline-offset
 
     if (!nome || !tel || !servico) {
       alert('Por favor, preencha nome, WhatsApp e serviço desejado.');
+      return;
+    }
+
+    if (!/^[1-9]\d{9,10}$/.test(tel.replace(/\D/g, ''))) {
+      alert('Informe um telefone com DDD e 10 ou 11 dígitos.');
+      document.getElementById('f-tel').focus();
       return;
     }
 
